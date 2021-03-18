@@ -1,0 +1,18 @@
+.btn-colour-Orange {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background-color:#50B3B8;
+  border-color: #50B3B8;
+  font-weight: bold;
+  letter-spacing: 0.05em; 
+}
+
+.btn-colour-Orange:hover,
+.btn-colour-Orange:active,
+.btn-colour-Orange:focus,
+.btn-colour-Orange.active {
+  /* let's darken #004E64 a bit for hover effect */
+  background:#50B3B8;
+  color: #ffffff;
+  border-color: #50B3B8;
+}

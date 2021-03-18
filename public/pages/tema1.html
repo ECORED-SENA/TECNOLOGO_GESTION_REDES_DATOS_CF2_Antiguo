@@ -1,0 +1,499 @@
+<div class="container">
+    <div class="jumbotron bg-white mt-2">
+        <div class="h1c">1. Redes de datos.</div>
+        <hr class="line" />
+        <div class="container">
+            <p class="parrafo mt-3">Las redes de datos son infraestructuras que se han creado para poder transmitir información a través del intercambio de datos. Según Moro (2013), son arquitecturas específicas para este fin, cuya base principal es la conmutación de paquetes y que atienden a una clasificación exclusiva, teniendo en cuenta la distancia que es capaz de cubrir su arquitectura física y, por supuesto, el tamaño que presentan.</p>
+            <p class="parrafo">Antes de proceder a determinar el significado del término que ahora nos ocupa, es importante dejar claro su origen etimológico. En concreto, de acuerdo con Vásquez (2010), establece la siguiente información:</p>
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="img-container"> <img class="card-img-top" src="assets/images/pages/ilustraciones/img1.svg" alt="..." /></div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="img-container"> <img class="card-img-top" src="assets/images/pages/ilustraciones/img2.svg" alt="..." /></div>
+                </div>
+            </div>
+            <div class="jumbotron bg1 mt-5">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-sm-12 col-lg-10 my-5">
+                        <p>Se conoce como red de datos a la infraestructura cuyo diseño posibilita la transmisión de información a través del intercambio de datos. De acuerdo con Pérez (2003), cada una de estas redes se ha diseñado específicamente para satisfacer sus objetivos, con una arquitectura determinada para facilitar el intercambio de los contenidos.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-sm-12 col-lg-2 my-2 d-none d-sm-block">
+                        <div class="img-container"> <img class="card-img-top img-fluid" src="assets/images/pages/ilustraciones/img3.svg" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="row mt-5">
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                    <div class="img-container"> <img class="card-img-top" src="assets/images/pages/ilustraciones/img4.svg" alt="..." /></div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                    <div class="h2c">1.1 La historia</div>
+                    <p class="parrafos mt-5">La historia de las redes de computadoras tiene sus orígenes al comienzo del siglo XIX. Los primeros sistemas se denominaban de telégrafo óptico y consistían en torres, similares a los molinos, con una serie de brazos o bien persianas. Estos brazos o persianas codificaban la información por sus distintas posiciones.</p>
+                    <p class="parrafos">Estas redes permanecieron hasta mediados del siglo XIX, cuando fueron sustituidas por el telégrafo, cada torre, evidentemente, debía de estar a distancia visual de las siguientes; cada torre repetía la información hasta llegar a su destino. Un sistema similar aparece, y tiene un protagonismo especial, en la novela Pavana, de Keith Roberts, una ucronía en la cual Inglaterra ha sido conquistada por la Armada Invencible.</p>
+                </div>
+            </div>
+            <div class="jumbotron borderjb mt-5">
+                <p class="parrafo mt-0">Las primeras redes comerciales se valían del protocolo Arcnet (Attached Resource Computer Network), desarrollado por Datapoint Corporation, alrededor de 1980. Utilizaba cable coaxial y empleaba conexiones de 2.5 Mbps, en ese tiempo considerada alta velocidad.</p>
+                <p class="parrafo">La primera red informática surgió en la Guerra Fría y se denominó Arpanet. Se creó durante la cortina de hierro, y su objetivo principal era que la información militar de los Estados Unidos no estuviera centralizada y pudiera estar disponible en un punto del país ante un eventual ataque ruso. Sólo unos meses después de la primera conexión, la red ya contaba con cuatro nodos remotos en otras instituciones estadounidenses como el Instituto de Investigaciones de Standford y la Universidad de Utah.</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                    <p class="parrafo">Cuando el primer sistema de comunicaciones ya resultaba obsoleto, se creó el protocolo TCP/IP, que se sigue utilizando hasta hoy, y que funciona como estándar dentro de las redes informáticas. En 1983, Paul Mockapetris y Jon Postel crearon el sistema de nombres de dominio (DNS) y las denominaciones .com, .org, y .gov, tan características de lo que hoy llamamos Internet.</p>
+                    <p class="parrafo">La última etapa en el desarrollo fue la creación de la World Wide Web, a cargo de Tim Berners-Lee, quien a principio de los ’90 inventó el sistema de links, fundamental para el crecimiento de la red de redes. Tim Berners no patentó su invento para no poner escollos comerciales a la evolución de Internet. Su aporte fue reconocido recientemente, cuando fue condecorado como caballero por la realeza británica y además fue elegido por la revista Time como uno de los 20 pensadores más influyentes del siglo XX.</p>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                    <div class="img-container"> <img class="card-img-top" src="assets/images/pages/ilustraciones/img5.svg" alt="..." /></div>
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="h2c mt-5">1.2 Conceptos básicos y componentes de una red</div>
+            <nav class="nav-tab-ecored my-5 d-sm-none d-md-block col-lg-12 d-none d-xs-block">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="nav-item nav-link active" id="nav-01-tab" data-toggle="tab" href="#nav-01" role="tab" aria-controls="nav-01" aria-selected="true"> <strong>Servidor</strong></a><a class="nav-item nav-link" id="nav-02-tab" data-toggle="tab" href="#nav-02" role="tab" aria-controls="nav-02" aria-selected="false"> <strong>Estacion de trabajo</strong></a><a class="nav-item nav-link" id="nav-03-tab" data-toggle="tab" href="#nav-03" role="tab" aria-controls="nav-03" aria-selected="false"> <strong>Tarjeta de conexión a la red</strong></a><a class="nav-item nav-link" id="nav-04-tab" data-toggle="tab" href="#nav-04" role="tab" aria-controls="nav-04" aria-selected="false"> <strong>Repetidores</strong></a><a class="nav-item nav-link" id="nav-05-tab" data-toggle="tab" href="#nav-05" role="tab" aria-controls="nav-05" aria-selected="false"> <strong>Routers</strong></a><a class="nav-item nav-link" id="nav-06-tab" data-toggle="tab" href="#nav-06" role="tab" aria-controls="nav-06" aria-selected="false"> <strong>Switch</strong></a><a class="nav-item nav-link" id="nav-07-tab" data-toggle="tab" href="#nav-07" role="tab" aria-controls="nav-07" aria-selected="false"> <strong>Cableado </strong></a><a class="nav-item nav-link" id="nav-08-tab" data-toggle="tab" href="#nav-08" role="tab" aria-controls="nav-08" aria-selected="false"> <strong>Protocolo</strong></a></div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-01" role="tabpanel" aria-labelledby="nav-01-tab">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 mt-5 col-sm-12">
+                                <div class="h1c">Servidor</div>
+                                <p class="parrafo">Es una computadora que, formando parte de una red, provee servicios a otras computadoras denominadas clientes. También se suele denominar con la palabra servidor a una aplicación informática o programa que realiza algunas tareas en beneficio de otras aplicaciones llamadas clientes. Entre los servicios ofrecidos por un servidor, está el manejo de archivos y aplicaciones. Los primeros consisten en un proceso de lectura y escritura por parte de los usuarios sobre archivos almacenados en una estación de trabajo. De otro lado, las aplicaciones permiten a los usuarios finales realizar tareas acordes a sus necesidades.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img6.svg" alt="..." /></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-02" role="tabpanel" aria-labelledby="nav-02-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5 col-sm-6"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img7.svg" alt="..." /></div>
+                            <div class="col-lg-9 col-md-7 mt-5 col-sm-6">
+                                <div class="h1c">Estación de trabajo</div>
+                                <p class="parrafo">Son los nodos finales de una red de computadoras. Normalmente, las estaciones de trabajo permiten a los usuarios ejecutar aplicaciones y almacenar diferentes tipos de información. Sin embargo, podríamos pensar en una impresora conectada a la red, como un nodo final de ésta y verse como una estación de trabajo, pero con prestaciones diferentes y reducidas comparadas con la de un computador.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-03" role="tabpanel" aria-labelledby="nav-03-tab">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 mt-5 col-sm-12">
+                                <div class="h1c">Tarjeta de conexión a red</div>
+                                <p class="parrafo">Es una computadora que, formando parte de una red, provee servicios a otras computadoras denominadas clientes. También se suele denominar con la palabra servidor a una aplicación informática o programa que realiza algunas tareas en beneficio de otras aplicaciones llamadas clientes. Entre los servicios ofrecidos por un servidor, está el manejo de archivos y aplicaciones. Los primeros consisten en un proceso de lectura y escritura por parte de los usuarios sobre archivos almacenados en una estación de trabajo. De otro lado, las aplicaciones permiten a los usuarios finales realizar tareas acordes a sus necesidades.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img8.svg" /></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-04" role="tabpanel" aria-labelledby="nav-04-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5 col-sm-6"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img9.svg" alt="..." /></div>
+                            <div class="col-lg-9 col-md-7 mt-5 col-sm-6">
+                                <div class="h1c">Repetidores</div>
+                                <p class="parrafo">Es un dispositivo electrónico que recibe una señal débil o de bajo nivel y la retransmite a una potencia o nivel más alto, de tal modo que se puedan cubrir distancias más largas sin degradación o con una degradación tolerable. El término repetidor se creó con la telegrafía y se refería a un dispositivo electromecánico utilizado para regenerar las señales telegráficas. El uso del término ha continuado en telefonía y transmisión de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-05" role="tabpanel" aria-labelledby="nav-05-tab">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-7 mt-5 col-sm-6">
+                                <div class="h1c">Routers</div>
+                                <p class="parrafo">Es un enrutador, elemento que marca el camino más adecuado para la transmisión de mensajes en una red completa, esta toma el mejor camino para enviar los datos dependiendo del tipo de protocolo que esté cargado.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-6"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img10.svg" /></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-06" role="tabpanel" aria-labelledby="nav-06-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img11.svg" alt="..." /></div>
+                            <div class="col-lg-8 col-md-6 mt-5 col-sm-12">
+                                <div class="h1c">Switch</div>
+                                <p class="parrafo">Es un dispositivo digital de lógica de interconexión de redes de computadores que opera en la capa 2 (nivel de enlace de datos) del modelo OSI. Su función es interconectar dos o más segmentos de red, de manera similar a los puentes (bridges), pasando datos de un segmento a otro de acuerdo con la dirección MAC de destino de las tramas en la red.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-07" role="tabpanel" aria-labelledby="nav-07-tab">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-7 mt-5 col-sm-6">
+                                <div class="h1c">Cableado</div>
+                                <p class="parrafo">Los tipos de cableado de red más populares son: par trenzado, cable coaxial y fibra óptica, además se pueden realizar conexiones a través de radio o microondas, dependiendo el tipo de red y los requerimientos de esta, velocidad y longitud, se debe considerar el tipo de cable a utilizar.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-6"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img12.svg" /></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-08" role="tabpanel" aria-labelledby="nav-08-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 order-md-2"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img13.svg" alt="..." /></div>
+                            <div class="col-lg-8 col-md-12 mt-5 col-sm-12 order-md-1">
+                                <div class="h1c">Protocolo</div>
+                                <p class="parrafo">El protocolo es la parte software de la red. Se encarga básicamente de establecer las reglas de comunicación entre equipos de la red, definir el formato de las informaciones que circulan por la red y también debe habilitar mecanismos para permitir la identificación de los equipos en la red. Existen infinidad de protocolos en función de la red con la que se está trabajando. El más utilizado actualmente es el conocido como TCP / IP.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="d-none d-sm-block d-md-none col-sm-12 d-block d-sm-none">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <h2 class="mb-0 collapsable-title">Servidor</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Es una computadora que, formando parte de una red, provee servicios a otras computadoras denominadas clientes. También se suele denominar con la palabra servidor a una aplicación informática o programa que realiza algunas tareas en beneficio de otras aplicaciones llamadas clientes. Entre los servicios ofrecidos por un servidor, está el manejo de archivos y aplicaciones. Los primeros consisten en un proceso de lectura y escritura por parte de los usuarios sobre archivos almacenados en una estación de trabajo. De otro lado, las aplicaciones permiten a los usuarios finales realizar tareas acordes a sus necesidades. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h2 class="mb-0 collapsable-title">Estación de trabajo</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Son los nodos finales de una red de computadoras. Normalmente, las estaciones de trabajo permiten a los usuarios ejecutar aplicaciones y almacenar diferentes tipos de información. Sin embargo, podríamos pensar en una impresora conectada a la red, como un nodo final de ésta y verse como una estación de trabajo, pero con prestaciones diferentes y reducidas comparadas con la de un computador.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h2 class="mb-0 collapsable-title">Tarjeta de conexión a red</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Toda computadora que desee conectarse a una red informática tiene que estar dotada de un dispositivo que le permita unirse a ella. Dicho dispositivo puede ser para una conexión alámbrica o inalámbrica. Cuando se trata de una conexión alámbrica, estamos hablando de una tarjeta de red o NIC (Network Interface Card) por sus siglas en inglés, la cual puede ser insertada directamente en la placa madre por medio de un puerto PCI. Dicha tarjeta trae consigo un conector para cable de red. Por otro lado, las tarjetas de red inalámbricas también pueden ser conectadas a la tarjeta madre por medio del puerto PCI o de manera externa por medio de un puerto USB.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <h2 class="mb-0 collapsable-title">Repetidores</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Es un dispositivo electrónico que recibe una señal débil o de bajo nivel y la retransmite a una potencia o nivel más alto, de tal modo que se puedan cubrir distancias más largas sin degradación o con una degradación tolerable. El término repetidor se creó con la telegrafía y se refería a un dispositivo electromecánico utilizado para regenerar las señales telegráficas. El uso del término ha continuado en telefonía y transmisión de datos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <h2 class="mb-0 collapsable-title">Routers</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseFive" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Es un enrutador, elemento que marca el camino más adecuado para la transmisión de mensajes en una red completa, esta toma el mejor camino para enviar los datos dependiendo del tipo de protocolo que esté cargado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <h2 class="mb-0 collapsable-title">Switch</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseSix" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Es un dispositivo digital de lógica de interconexión de redes de computadores que opera en la capa 2 (nivel de enlace de datos) del modelo OSI. Su función es interconectar dos o más segmentos de red, de manera similar a los puentes (bridges), pasando datos de un segmento a otro de acuerdo con la dirección MAC de destino de las tramas en la red.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFive">
+                                        <h2 class="mb-0 collapsable-title">Cableado</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseSeven" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">Los tipos de cableado de red más populares son: par trenzado, cable coaxial y fibra óptica, además se pueden realizar conexiones a través de radio o microondas, dependiendo el tipo de red y los requerimientos de esta, velocidad y longitud, se debe considerar el tipo de cable a utilizar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseSix">
+                                        <h2 class="mb-0 collapsable-title">Protocolo</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseEight" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="parrafo">El protocolo es la parte software de la red. Se encarga básicamente de establecer las reglas de comunicación entre equipos de la red, definir el formato de las informaciones que circulan por la red y también debe habilitar mecanismos para permitir la identificación de los equipos en la red. Existen infinidad de protocolos en función de la red con la que se está trabajando. El más utilizado actualmente es el conocido como TCP / IP. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-5">
+                    <div class="h2c">1.3 Medios de transmisión</div>
+                    <p class="parrafo">Los medios de transmisión son las vías por las cuales se comunican los datos. Dependiendo de la forma de conducir la señal a través del medio o soporte físico, </p>
+                </div>
+                <div class="col-sm-12 col-lg-7"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img14.svg" alt="..." /></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="jumbotron bg2 my-auto"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img15.svg" alt="..." /></div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="h1cc mt-3">Medio de transmisión guiados.</div>
+                    <p class="parrafo mt-3">Los medios de transmisión guiados están constituidos por cables que se encargan de la conducción (o guiado) de las señales desde un extremo al otro. Las principales características de los medios guiados son el tipo de conductor utilizado, la velocidad máxima de transmisión, las distancias máximas que puede ofrecer entre repetidores, la inmunidad frente a interferencias electromagnéticas, la facilidad de instalación y la capacidad de soportar diferentes tecnologías de nivel de enlace. Dentro de los medios de transmisión guiados, los más utilizados en el campo de las telecomunicaciones y la interconexión de computadoras son tres:</p><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img16.svg" alt="..." />
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="h1cc">Medio de transmisión no guiados.</div>
+                    <p class="parrafo mt-3">Los medios no guiados o comunicación sin cable transportan ondas electromagnéticas sin usar un conductor físico, sino que se radian a través del aire, por lo que están disponibles para cualquiera que tenga un dispositivo capaz de aceptarlas. En este tipo de medios tanto la transmisión como la recepción de información se lleva a cabo mediante antenas. Según el rango de frecuencias de trabajo, las transmisiones no guiadas se pueden clasificar en tres tipos:</p><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img18.svg" alt="..." />
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="jumbotron bg2 my-auto"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img17.svg" alt="..." /></div>
+                </div>
+            </div>
+            <hr class="line mt-5" />
+            <div class="h2c mt-5">1.4 Protocolos de comunicación</div>
+            <div class="row">
+                <p class="parrafo">Está claro que las personas utilizan diferentes formas de comunicación. Las palabras, los gestos, los mensajes escritos nos permiten establecer esta comunicación, pero ¿cómo entendernos sin un lenguaje común?, ¿qué normas seguimos para establecer esta comunicación?, ¿nos comunicamos de la misma forma con todas las personas? El ejemplo de la Torre de Babel, la cual no llegó a construirse porque se hablaban multitud de lenguas, nos sirve para entender la importancia de la comunicación.</p>
+                <div class="col-sm-12 col-lg-6">
+                    <p class="parrafo">Cuando se trata de la comunicación entre ordenadores primero se deben conocer cuáles son las normas que permiten esta comunicación, o lo que es lo mismo, qué protocolo de comunicación utilizan. Para Stallings, Tanenbaum y Stevens (2000), un protocolo de red es un conjunto de normas que permite la comunicación entre ordenadores, estableciendo la forma de identificación de éstos en la red, la forma de transmisión de los datos y la forma en que la información debe procesarse. </p>
+                    <p class="parrafo">Los protocolos pueden ser implementados mediante hardware (tarjetas de red), software (drivers), o una combinación de ambos.</p>
+                </div>
+                <div class="col-sm-12 col-lg-6"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img19.svg" alt="..." /></div>
+                <!--Arreglar aliniacion de imagen-->
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-12">
+                    <div class="img-container"> <img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img20.svg" alt="..." /></div>
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="h2c">1.5 Clasificación de redes</div>
+            <p class="parrafo">La clasificación de las redes puede realizarse desde distintos puntos de vista, pero la más general es la que se realiza en función del número de equipos conectados y la distancia a la que se encuentran:</p>
+            <div class="row">
+                <div class="col-5 d-none d-sm-block col-lg-4 col-md-12"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img21.svg" alt="..." /></div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <h2 class="mb-0 collapsable-title">Por alcance</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="ul-bullet">
+                                        <li>Red de área personal o PAN (personal area network)</li><br />
+                                        <li>Red de área local o LAN (local area network)</li><br />
+                                        <li>Una red de área de campus o CAN (campus area network)</li><br />
+                                        <li>Una red de área metropolitana (metropolitan area network o MAN, en inglés)</li><br />
+                                        <li>Las redes de área amplia (wide area network, WAN)</li><br />
+                                        <li>Una red de área de almacenamiento, en inglés SAN (storage area network)</li><br />
+                                        <li>Una Red de área local virtual (Virtual LAN, VLAN). </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h2 class="mb-0 collapsable-title">Por tipo de conexión</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="ul-bullet">
+                                        <li>Medios guiados</li>
+                                        <li>Medios no guiados </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h2 class="mb-0 collapsable-title">Por relación funcional</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="ul-bullet">
+                                        <!--Agregar negrita a arquitectura o relacion-->
+                                        <li>Es una arquitectura o relación que consiste en realizar peticiones o solicitudes a un componente de la red informática llamado servidor y que puede estar alojado en la misma red del peticionario. Este componente a su vez puede o no responder satisfactoriamente la petición y si ésta es positiva entonces se dará lugar a un servicio.}</li><br /><!-- Aregar negrillas a Peer-to-peer-->
+                                        <li>Peer-to-peer. Consiste en la conformación de una red de datos en la que no hay componentes dominantes o que dirijan a los demás integrantes de la malla. Es decir, cada elemento de la red tiene los mismos privilegios y restricciones que cualquier otro.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <h2 class="mb-0 collapsable-title">Por tecnología</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="ul-bullet">
+                                        <!--Agregar negrita a arquitectura o relacion-->
+                                        <li>Red Point-To-Point es aquella en la que existe multitud de conexiones entre parejas individuales de máquinas. Este tipo de red requiere, en algunos casos, máquinas intermedias (routers)que establezcan rutas para que puedan transmitirse paquetes de datos.</li><br /><!-- Aregar negrillas a Peer-to-peer-->
+                                        <li>Red Broadcast se caracteriza por transmitir datos por un sólo canal de comunicación que comparten todas las máquinas de la red. En este caso, el paquete enviado es recibido por todas las máquinas de la red, pero únicamente la destinataria puede procesarlo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <h2 class="mb-0 collapsable-title">Por la direccionalidad de los datos</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseFive" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="ul-bullet">
+                                        <!--Agregar negrita a arquitectura o relacion-->
+                                        <li>Simplex o Unidireccional:Consiste en la transmisión de información en un solo sentido donde el emisor no tiene retroalimentación alguna por parte del receptor. Un ejemplo de este tipo de transmisión son las emisoras radiales, donde el oyente necesita de un radio receptor pero éste aparato no permite enviar señal alguna.</li><br /><!-- Aregar negrillas a Peer-to-peer-->
+                                        <li>Half-Duplex o Bidireccional: Este tipo de comunicación permite que la información se transmita en ambos sentidos, pero con la restricción de uno solo a la vez. Es decir, para que uno de los dos involucrados (emisor o receptor) pueda transmitir, el otro debe estar en silencio. También es denominado semi-duplex. Un ejemplo de este tipo de transmisión son los radios de la policía. </li><br />
+                                        <li>Full-Duplex: ambos pueden transmitir y recibir a la vez la misma información. Un claro ejemplo de este tipo de transmisión son los teléfonos móviles o celulares.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <h2 class="mb-0 collapsable-title">Por grado de difusión</h2>
+                                    </button></h2>
+                            </div>
+                            <div class="collapse" id="collapseSix" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="ul-bullet">
+                                        <!--Agregar negrita a arquitectura o relacion-->
+                                        <li>Una intranet es una red de computadoras que utiliza alguna tecnología de red para usos comerciales, educativos o de otra índole de forma privada, esto es, que no comparte sus recursos o su información con redes ilegítimas.</li><br /><!-- Aregar negrillas a Peer-to-peer-->
+                                        <li>Internet es un conjunto descentralizado de redes de comunicación interconectadas que utilizan la familia de protocolos TCP/IP, garantizando que las redes físicas heterogéneas que la componen funcionen como una red lógica única, de alcance mundial.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line mt-5" />
+            <div class="h2c">1.6 Topologías de redes </div>
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="div jt1">
+                        <p class="pf1">En cuanto a la topología física, existen tres tipos considerados básicos para montar una red:</p>
+                    </div>
+                    <div class="div jt2 mt-3">
+                        <ul class="ul-bullet mt-0 mb-0">
+                            <li>La red en bus consiste en la conexión de todos los nodos de la red a un solo canal de comunicación lo que genera una serie de desventajas como degradación de la señal, pobre escalamiento entre otras.</li>
+                        </ul>
+                    </div>
+                    <div class="div jt2 mt-3">
+                        <ul class="ul-bullet">
+                            <li>En una red en anillo cada estación está conectada a la siguiente y la última está conectada a la primera.</li>
+                        </ul>
+                    </div>
+                    <div class="div jt2 mt-3">
+                        <ul class="ul-bullet">
+                            <li>En una red en estrella las estaciones están conectadas directamente a un punto central y todas las comunicaciones se han de hacer necesariamente a través de este.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <p class="parrafo">El resto de las topologías físicas que se pueden dar son combinaciones de las anteriores.</p><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img22.svg" alt="..." />
+                    <div class="ct1 mt-5"></div>
+                    <div class="row">
+                        <div class="col-3 d-inline-block"> <img class="img-a pull-left img-fluid" src="assets/images/pages/ilustraciones/img23.svg" alt="..." /></div>
+                        <div class="col-9 d-inline-block">
+                            <p class="parrafo">Broadcast: se basa en que cada ordenador envía sus datos hacia todos los demás del medio de red. Las operaciones se realizan por orden de llegada como si fuese Ethernet.</p>
+                        </div>
+                    </div>
+                    <div class="ct1 mt-5"></div>
+                    <div class="row">
+                        <div class="col-3 d-inline-block"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img24.svg" alt="..." /></div>
+                        <div class="col-9 d-inline-block">
+                            <p class="parrafo">Transmisión de tokens: se basa en la transmisión de forma secuencial de tokens electrónicos a cada ordenador. Hay dos tipos de redes que utilizan esta topología: TokenRing y FDDI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="h2c">1.7 Modelo TCP/IP y OSI <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 div-blue">
+                        <div class="row">
+                            <div class="col-12 pt-3"><img class="img-a img-fluid img-div" src="assets/images/pages/ilustraciones/img37.svg" alt="..." /></div>
+                            <div class="col-12">
+                                <div class="hvc">TCP/IP</div>
+                                <div class="textdiv">
+                                    <p class="parrafo-d">De acuerdo con Corona (2004), los protocolos IP (Protocolo de Internet) y TCP (Protocolo de Control de Transmisión) se originaron a principios de 1980 y fueron adoptados por la red ARPANET en 1983, que estaba integrada por cientos de computadoras de universidades, centros de investigación militar y algunas empresas. El e-mail (electronic mail) fue el servicio más comúnmente utilizado entonces, mientras que el sistema operativo más empleado era UNIX, en su versión BSD UNIX, desarrollada por la Universidad de California. Fue a mediados de los ochenta cuando fue creado el protocolo TCP/IP con la finalidad de contar con un lenguaje común a todas las computadoras conectadas a Internet, ya con la unión de las redes ARPANET, CSNET y MILNET. El protocolo TCP/IP representa, entonces, las reglas que hacen posible la conexión de computadoras de marcas y tecnología diferentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 div-cyan">
+                        <div class="row">
+                            <div class="col-12 pt-3"><img class="img-a img-fluid img-div" src="assets/images/pages/ilustraciones/img38.svg" alt="..." /></div>
+                            <div class="col-12">
+                                <div class="hvb">OSI</div>
+                                <div class="textdiv">
+                                    <p class="parrafo-b">A principios de los años ochenta, la Organización Internacional para la Estandarización (ISO, International Standards Organization) desarrolló el modelo de referencia de interconexión de sistemas abiertos (OSI, Open Systems Interconnect) para estandarizar la forma en que se comunican los dispositivos en una red. Este modelo representó un gran paso en aras de asegurar la interoperabilidad entre dispositivos de red.El modelo OSI divide las comunicaciones de red en siete capas diferenciadas. Si bien existen otros modelos, actualmente la mayoría de los proveedores de red desarrollan sus productos utilizando este marco.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line mt-5" />
+            <div class="h2c">1.8 Tecnología Ethernet</div>
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-4"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img27.svg" alt="..." /></div>
+                <div class="col-sm-12 col-lg-8">
+                    <p class="parrafo mt-3">Es una serie de estándares establecidos para la implementación de redes de área local o LAN. Para Forouzan (2002), se caracteriza por ser más estable, confiable y rápida en la transmisión de datos, ya que la interferencia con otros dispositivos de la misma red es mínima. Otra ventaja que presenta esta serie de estándares es la velocidad de transmisión pues puede ser del orden de los 100 Gbit/s. Para poder implementar una red tipo Ethernet es necesario contar con una serie de dispositivos que cumplen diferentes funciones. Algunos de ellos son: enrutadores, switches, cables UTP, bridges, entre otros.<img class="img-a img-fluid mt-3" src="assets/images/pages/ilustraciones/img35.svg" alt="..." /></p>
+                </div>
+            </div>
+            <div class="jumbotron borderjb mt-5">
+                <p class="parrafo">Los objetivos principales de Ethernet son consistentes con los que se han convertido en los requerimientos básicos para el desarrollo y uso de redes LAN: </p>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                        <ul class="ul-bullet my-auto d-block m-auto">
+                            <li>Simplicidad</li>
+                            <li>Bajo costo </li>
+                            <li>Compatibilidad </li>
+                            <li>Direccionamiento flexible</li>
+                            <li>Equidad </li>
+                            <li>Progreso </li>
+                            <li>Bajo retardo </li>
+                            <li>Estabilidad </li>
+                            <li>Mantenimiento </li>
+                            <li>Arquitectura en capas</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-8">
+                        <div class="img-container"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img28.svg" alt="..." /></div>
+                    </div>
+                </div>
+                <div class="h2c">1.8.2 La trama de Ethernet </div>
+                <p class="parrafo mt-3">En una red Ethernet los dispositivos intercambian paquetes de datos entre sí, los llamados paquetes Ethernet. En su contenido se incluye la trama Ethernet (a menudo denominada también trama de datos), que a su vez se divide en varios conjuntos de datos. Estos registros consisten en código binario que proporciona información importante, incluyendo direcciones, información de control, datos de uso y sumas de comprobación.</p>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="img-container"><img class="img-a img-fluid d-block m-auto" src="assets/images/pages/ilustraciones/img36.svg" alt="..." /></div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="my-5">
+                            <p class="parrafo">Los tipos de Ethernet son:</p>
+                            <ul class="ul-bullet">
+                                <li>Ethernet</li>
+                                <li>Fast Ethernet</li>
+                                <li>Gigaabit Ethernet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

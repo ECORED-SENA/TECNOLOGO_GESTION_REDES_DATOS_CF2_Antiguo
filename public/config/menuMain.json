@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "introduccion",
+    "title": "Introduccion",
+    "breadcrumb": ["Inicio","Introducción"],
+    "path": "pages/introduccion.html"     
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "redes-de-datos",
+    "title": "Redes de datos",
+    "breadcrumb": ["Inicio","Redes-de-datos"],
+    "path": "pages/tema1.html",    
+    "submenu": []   
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "tecnologia-networking",
+    "title": "Tecnología y conceptos básicos de networking",
+    "breadcrumb": ["Inicio","tecnologia-networking"],
+    "path": "pages/tema2.html",    
+    "submenu": []   
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "diseno-implementacion-lan",
+    "title": "Diseño e implementación de la red LAN",
+    "breadcrumb": ["Inicio","diseño-implenetacion-lan"],
+    "path": "pages/tema3.html",    
+    "submenu": []   
+  }
+  
+]
