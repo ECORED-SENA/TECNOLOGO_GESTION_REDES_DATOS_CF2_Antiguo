@@ -5,7 +5,6 @@ html(lang="es")
     head
         include includes/head.pug
 
-
     body#page-home.theme-dark.page-header-textura
 
         header#CursoPresentacion.curso-presentacion.page-header
@@ -23,11 +22,21 @@ html(lang="es")
                 include includes/page-home_resultados.pug  
 
         section#IndiceTematico.curso-indice-tematico.section
-
             .container
 
-                include includes/page-home_indice_tematico.pug  
-
+                include includes/page-home_indice_tematico.pug   
+            div.rp.d-block.m-auto
+                img.card-img-top.img29(src="assets/images/pages/ilustraciones/img1.svg", alt='...').img-fluid.position-absolute.img-rp.float-none
+                .row
+                    .col-2
+                    .col-4.my-auto
+                        .h1p ¿Todo listo para iniciar?
+                    .col-4.my-auto   
+                        p.parrafo-rp Es momento de empezar tu proceso académico, descubre y explora todas las habilidades cognitivas en este nuevo curso.
+                    .col-2.my-auto   
+                        a.curso-btn-iniciar.btn.btn-dark(href="main.html")
+                            span.bt-text Iniciar curso 
+                            .fa.fa-chevron-right.ml-1.my-auto.d-inline.bt-icon
 
         +creditosFooter("assets/images/logos/senaLogo.svg")
 

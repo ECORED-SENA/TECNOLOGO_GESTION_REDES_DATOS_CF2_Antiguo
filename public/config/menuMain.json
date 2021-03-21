@@ -16,29 +16,19 @@
   { 
     "id": 1,
     "icon": "fa fa-play-circle",
-    "slug": "redes-de-datos",
-    "title": "Redes de datos",
-    "breadcrumb": ["Inicio","Redes-de-datos"],
+    "slug": "direccionamiento-ip",
+    "title": "Direccionamiento IP",
+    "breadcrumb": ["Inicio","direccionamiento-ip"],
     "path": "pages/tema1.html",    
     "submenu": []   
   },
   { 
     "id": 1,
     "icon": "fa fa-play-circle",
-    "slug": "tecnologia-networking",
-    "title": "Tecnología y conceptos básicos de networking",
-    "breadcrumb": ["Inicio","tecnologia-networking"],
+    "slug": "verificación-dispositivos",
+    "title": "Verificación dispositivos",
+    "breadcrumb": ["Inicio","Verificación-dispositivos"],
     "path": "pages/tema2.html",    
     "submenu": []   
-  },
-  { 
-    "id": 1,
-    "icon": "fa fa-play-circle",
-    "slug": "diseno-implementacion-lan",
-    "title": "Diseño e implementación de la red LAN",
-    "breadcrumb": ["Inicio","diseño-implenetacion-lan"],
-    "path": "pages/tema3.html",    
-    "submenu": []   
   }
-  
 ]

@@ -1,446 +1,424 @@
 
 .container
     .jumbotron.bg-white.mt-2
-        .h1c 1. Redes de datos.
+        .h1c 1. Direccionamiento IP 
         hr.line
-        .container 
-            p.parrafo.mt-3 Las redes de datos son infraestructuras que se han creado para poder transmitir información a través del intercambio de datos. Según Moro (2013), son arquitecturas específicas para este fin, cuya base principal es la conmutación de paquetes y que atienden a una clasificación exclusiva, teniendo en cuenta la distancia que es capaz de cubrir su arquitectura física y, por supuesto, el tamaño que presentan.
-            p.parrafo Antes de proceder a determinar el significado del término que ahora nos ocupa, es importante dejar claro su origen etimológico. En concreto, de acuerdo con Vásquez (2010), establece la siguiente información:
-
-            .row 
-                .col-xs-12.col-lg-6
-                    .img-container  
-                        img.card-img-top(src="assets/images/pages/ilustraciones/img1.svg", alt='...')
-                .col-xs-12.col-lg-6
-                    .img-container  
-                        img.card-img-top(src="assets/images/pages/ilustraciones/img2.svg", alt='...') 
-
-            .jumbotron.bg1.mt-5
-                .row 
-                    .col-xs-12.col-md-6.col-sm-12.col-lg-10.my-5    
-                        p Se conoce como red de datos a la infraestructura cuyo diseño posibilita la transmisión de información a través del intercambio de datos. De acuerdo con Pérez (2003), cada una de estas redes se ha diseñado específicamente para satisfacer sus objetivos, con una arquitectura determinada para facilitar el intercambio de los contenidos.
-                    .col-xs-12.col-md-6.col-sm-12.col-lg-2.my-2.d-none.d-sm-block
-                        .img-container 
-                            img.card-img-top(src="assets/images/pages/ilustraciones/img3.svg", alt='...').img-fluid 
-            hr.line
-            
-            .row.mt-5 
-                .col-xs-12.col-md-12.col-lg-6
-                    .img-container  
-                        img.card-img-top(src="assets/images/pages/ilustraciones/img4.svg", alt='...')
-                .col-xs-12.col-md-12.col-lg-6
-                    .h2c 1.1 La historia
-                    p.parrafos.mt-5 La historia de las redes de computadoras tiene sus orígenes al comienzo del siglo XIX. Los primeros sistemas se denominaban de telégrafo óptico y consistían en torres, similares a los molinos, con una serie de brazos o bien persianas. Estos brazos o persianas codificaban la información por sus distintas posiciones.
-                    p.parrafos Estas redes permanecieron hasta mediados del siglo XIX, cuando fueron sustituidas por el telégrafo, cada torre, evidentemente, debía de estar a distancia visual de las siguientes; cada torre repetía la información hasta llegar a su destino. Un sistema similar aparece, y tiene un protagonismo especial, en la novela Pavana, de Keith Roberts, una ucronía en la cual Inglaterra ha sido conquistada por la Armada Invencible.
-
-            .jumbotron.borderjb.mt-5
-                p.parrafo.mt-0 Las primeras redes comerciales se valían del protocolo Arcnet (Attached Resource Computer Network), desarrollado por Datapoint Corporation, alrededor de 1980. Utilizaba cable coaxial y empleaba conexiones de 2.5 Mbps, en ese tiempo considerada alta velocidad.
-
-                p.parrafo La primera red informática surgió en la Guerra Fría y se denominó Arpanet. Se creó durante la cortina de hierro, y su objetivo principal era que la información militar de los Estados Unidos no estuviera centralizada y pudiera estar disponible en un punto del país ante un eventual ataque ruso. Sólo unos meses después de la primera conexión, la red ya contaba con cuatro nodos remotos en otras instituciones estadounidenses como el Instituto de Investigaciones de Standford y la Universidad de Utah.
-            .row 
-                .col-xs-12.col-md-12.col-lg-6
-                    p.parrafo Cuando el primer sistema de comunicaciones ya resultaba obsoleto, se creó el protocolo TCP/IP, que se sigue utilizando hasta hoy, y que funciona como estándar dentro de las redes informáticas. En 1983, Paul Mockapetris y Jon Postel crearon el sistema de nombres de dominio (DNS) y las denominaciones .com, .org, y .gov, tan características de lo que hoy llamamos Internet.
-
-                    p.parrafo La última etapa en el desarrollo fue la creación de la World Wide Web, a cargo de Tim Berners-Lee, quien a principio de los ’90 inventó el sistema de links, fundamental para el crecimiento de la red de redes. Tim Berners no patentó su invento para no poner escollos comerciales a la evolución de Internet. Su aporte fue reconocido recientemente, cuando fue condecorado como caballero por la realeza británica y además fue elegido por la revista Time como uno de los 20 pensadores más influyentes del siglo XX.
-
-                .col-xs-12.col-md-12.col-lg-6
-                    .img-container  
-                        img.card-img-top(src="assets/images/pages/ilustraciones/img5.svg", alt='...')
-            hr.line
-            
-
-            .h2c.mt-5 1.2 Conceptos básicos y componentes de una red
-            nav.nav-tab-ecored.my-5.d-sm-none.d-md-block.col-lg-12.d-none.d-xs-block
-                    #nav-tab.nav.nav-tabs(role='tablist')
-                        a#nav-01-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-01', role='tab', aria-controls='nav-01', aria-selected='true') 
-                            strong Servidor
-                        a#nav-02-tab.nav-item.nav-link(data-toggle='tab', href='#nav-02', role='tab', aria-controls='nav-02', aria-selected='false') 
-                            strong Estacion de trabajo
-                        a#nav-03-tab.nav-item.nav-link(data-toggle='tab', href='#nav-03', role='tab', aria-controls='nav-03', aria-selected='false') 
-                            strong Tarjeta de conexión a la red
-                        a#nav-04-tab.nav-item.nav-link(data-toggle='tab', href='#nav-04', role='tab', aria-controls='nav-04', aria-selected='false') 
-                            strong Repetidores
-                        a#nav-05-tab.nav-item.nav-link(data-toggle='tab', href='#nav-05', role='tab', aria-controls='nav-05', aria-selected='false') 
-                            strong Routers
-                        a#nav-06-tab.nav-item.nav-link(data-toggle='tab', href='#nav-06', role='tab', aria-controls='nav-06', aria-selected='false') 
-                            strong Switch
-                        a#nav-07-tab.nav-item.nav-link(data-toggle='tab', href='#nav-07', role='tab', aria-controls='nav-07', aria-selected='false') 
-                            strong Cableado 
-                        a#nav-08-tab.nav-item.nav-link(data-toggle='tab', href='#nav-08', role='tab', aria-controls='nav-08', aria-selected='false') 
-                            strong Protocolo
-                        
-                    #nav-tabContent.tab-content
-                        #nav-01.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-01-tab')
-                            .row 
-                                .col-lg-8.col-md-12.mt-5.col-sm-12 
-                                    .h1c Servidor
-                                    p.parrafo Es una computadora que, formando parte de una red, provee servicios a otras computadoras denominadas clientes. También se suele denominar con la palabra servidor a una aplicación informática o programa que realiza algunas tareas en beneficio de otras aplicaciones llamadas clientes.  Entre los servicios ofrecidos por un servidor, está el manejo de archivos y aplicaciones. Los primeros consisten en un proceso de lectura y escritura por parte de los usuarios sobre archivos almacenados en una estación de trabajo. De otro lado, las aplicaciones permiten a los usuarios finales realizar tareas acordes a sus necesidades.
-                                .col-lg-4.col-md-12.col-sm-12
-                                    img.img-a(src="assets/images/pages/ilustraciones/img6.svg", alt='...').img-fluid.d-block.m-auto
-
-
-                        #nav-02.tab-pane.fade(role='tabpanel', aria-labelledby='nav-02-tab')
-                            .row
-                                    .col-lg-3.col-md-5.col-sm-6
-                                        img.img-a(src="assets/images/pages/ilustraciones/img7.svg", alt='...').img-fluid
-                                    .col-lg-9.col-md-7.mt-5.col-sm-6
-                                        .h1c Estación de trabajo
-                                        p.parrafo Son los nodos finales de una red de computadoras. Normalmente, las estaciones de trabajo permiten a los usuarios ejecutar aplicaciones y almacenar diferentes tipos de información. Sin embargo, podríamos pensar en una impresora conectada a la red, como un nodo final de ésta y verse como una estación de trabajo, pero con prestaciones diferentes y reducidas comparadas con la de un computador.
-                                    
-                            
-                        #nav-03.tab-pane.fade(role='tabpanel', aria-labelledby='nav-03-tab')
-                            .row 
-                                .col-lg-8.col-md-12.mt-5.col-sm-12
-                                    .h1c Tarjeta de conexión a red
-                                    p.parrafo Es una computadora que, formando parte de una red, provee servicios a otras computadoras denominadas clientes. También se suele denominar con la palabra servidor a una aplicación informática o programa que realiza algunas tareas en beneficio de otras aplicaciones llamadas clientes.  Entre los servicios ofrecidos por un servidor, está el manejo de archivos y aplicaciones. Los primeros consisten en un proceso de lectura y escritura por parte de los usuarios sobre archivos almacenados en una estación de trabajo. De otro lado, las aplicaciones permiten a los usuarios finales realizar tareas acordes a sus necesidades.
-                                .col-lg-4.col-md-12.col-sm-12
-                                    img.img-a(src="assets/images/pages/ilustraciones/img8.svg").img-fluid.d-block.m-auto
-
-                        #nav-04.tab-pane.fade(role='tabpanel', aria-labelledby='nav-04-tab')
-                            .row
-                                    .col-lg-3.col-md-5.col-sm-6
-                                        img.img-a(src="assets/images/pages/ilustraciones/img9.svg", alt='...').img-fluid
-                                    .col-lg-9.col-md-7.mt-5.col-sm-6
-                                        .h1c Repetidores
-                                        p.parrafo Es un dispositivo electrónico que recibe una señal débil o de bajo nivel y la retransmite a una potencia o nivel más alto, de tal modo que se puedan cubrir distancias más largas sin degradación o con una degradación tolerable. El término repetidor se creó con la telegrafía y se refería a un dispositivo electromecánico utilizado para regenerar las señales telegráficas. El uso del término ha continuado en telefonía y transmisión de datos.
-                        #nav-05.tab-pane.fade(role='tabpanel', aria-labelledby='nav-05-tab')
-                            .row 
-                                .col-lg-9.col-md-7.mt-5.col-sm-6 
-                                    .h1c Routers
-                                    p.parrafo Es un enrutador, elemento que marca el camino más adecuado para la transmisión de mensajes en una red completa, esta toma el mejor camino para enviar los datos dependiendo del tipo de protocolo que esté cargado.
-
-                                .col-lg-3.col-md-5.col-sm-6
-                                    img.img-a(src="assets/images/pages/ilustraciones/img10.svg").img-fluid
-                        #nav-06.tab-pane.fade(role='tabpanel', aria-labelledby='nav-06-tab')
-                            .row
-                                    .col-lg-4.col-md-6.col-sm-12
-                                        img.img-a(src="assets/images/pages/ilustraciones/img11.svg", alt='...').img-fluid
-                                    .col-lg-8.col-md-6.mt-5.col-sm-12 
-                                        .h1c Switch
-                                        p.parrafo Es un dispositivo digital de lógica de interconexión de redes de computadores que opera en la capa 2 (nivel de enlace de datos) del modelo OSI. Su función es interconectar dos o más segmentos de red, de manera similar a los puentes (bridges), pasando datos de un segmento a otro de acuerdo con la dirección MAC de destino de las tramas en la red.
-                        #nav-07.tab-pane.fade(role='tabpanel', aria-labelledby='nav-07-tab')
-
-                            .row 
-                                .col-lg-9.col-md-7.mt-5.col-sm-6 
-                                    .h1c Cableado
-                                    p.parrafo Los tipos de cableado de red más populares son: par trenzado, cable coaxial y fibra óptica, además se pueden realizar conexiones a través de radio o microondas, dependiendo el tipo de red y los requerimientos de esta, velocidad y longitud, se debe considerar el tipo de cable a utilizar.
-
-                                .col-lg-3.col-md-5.col-sm-6
-                                    img.img-a(src="assets/images/pages/ilustraciones/img12.svg").img-fluid
-                        #nav-08.tab-pane.fade(role='tabpanel', aria-labelledby='nav-08-tab')
-                            .row
-                                    .col-lg-4.col-md-12.col-sm-12.order-md-2
-                                        img.img-a(src="assets/images/pages/ilustraciones/img13.svg", alt='...').img-fluid.d-block.m-auto
-                                    .col-lg-8.col-md-12.mt-5.col-sm-12.order-md-1   
-                                        .h1c Protocolo
-                                        p.parrafo El protocolo es la parte software de la red. Se encarga básicamente de establecer las reglas de comunicación entre equipos de la red, definir el formato de las informaciones que circulan por la red y también debe habilitar mecanismos para permitir la identificación de los equipos en la red. Existen infinidad de protocolos en función de la red con la que se está trabajando. El más utilizado actualmente es el conocido como TCP / IP.
-            .row 
-                .d-none.d-sm-block.d-md-none.col-sm-12.d-block.d-sm-none
-                     #accordionExample.accordion
-                        .card
-                            #headingOne.card-header
-                                h2.mb-0
-                                    button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
-                                        h2.mb-0.collapsable-title Servidor
-                            #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
-                                .card-body
-                                    p.parrafo Es una computadora que, formando parte de una red, provee servicios a otras computadoras denominadas clientes. También se suele denominar con la palabra servidor a una aplicación informática o programa que realiza algunas tareas en beneficio de otras aplicaciones llamadas clientes.  Entre los servicios ofrecidos por un servidor, está el manejo de archivos y aplicaciones. Los primeros consisten en un proceso de lectura y escritura por parte de los usuarios sobre archivos almacenados en una estación de trabajo. De otro lado, las aplicaciones permiten a los usuarios finales realizar tareas acordes a sus necesidades.            
-                        .card
-                            #headingTwo.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                                        h2.mb-0.collapsable-title Estación de trabajo
-                            #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
-                                .card-body
-                                    p.parrafo Son los nodos finales de una red de computadoras. Normalmente, las estaciones de trabajo permiten a los usuarios ejecutar aplicaciones y almacenar diferentes tipos de información. Sin embargo, podríamos pensar en una impresora conectada a la red, como un nodo final de ésta y verse como una estación de trabajo, pero con prestaciones diferentes y reducidas comparadas con la de un computador.
-                                    
-                        .card
-                            #headingThree.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                                        h2.mb-0.collapsable-title Tarjeta de conexión a red
-                            #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
-                                .card-body
-                                    p.parrafo Toda computadora que desee conectarse a una red informática tiene que estar dotada de un dispositivo que le permita unirse a ella. Dicho dispositivo puede ser para una conexión alámbrica o inalámbrica. Cuando se trata de una conexión alámbrica, estamos hablando de una tarjeta de red o NIC (Network Interface Card) por sus siglas en inglés, la cual puede ser insertada directamente en la placa madre por medio de un puerto PCI. Dicha tarjeta trae consigo un conector para cable de red. Por otro lado, las tarjetas de red inalámbricas también pueden ser conectadas a la tarjeta madre por medio del puerto PCI o de manera externa por medio de un puerto USB.
-                                    
-                        .card
-                            #headingFour.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
-                                        h2.mb-0.collapsable-title Repetidores
-                            #collapseFour.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                    p.parrafo Es un dispositivo electrónico que recibe una señal débil o de bajo nivel y la retransmite a una potencia o nivel más alto, de tal modo que se puedan cubrir distancias más largas sin degradación o con una degradación tolerable. El término repetidor se creó con la telegrafía y se refería a un dispositivo electromecánico utilizado para regenerar las señales telegráficas. El uso del término ha continuado en telefonía y transmisión de datos.
-
-                        .card
-                            #headingFive.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
-                                        h2.mb-0.collapsable-title Routers
-                            #collapseFive.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                   p.parrafo Es un enrutador, elemento que marca el camino más adecuado para la transmisión de mensajes en una red completa, esta toma el mejor camino para enviar los datos dependiendo del tipo de protocolo que esté cargado.
-
-                        .card
-                            #headingSix.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
-                                        h2.mb-0.collapsable-title Switch
-                            #collapseSix.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                    p.parrafo Es un dispositivo digital de lógica de interconexión de redes de computadores que opera en la capa 2 (nivel de enlace de datos) del modelo OSI. Su función es interconectar dos o más segmentos de red, de manera similar a los puentes (bridges), pasando datos de un segmento a otro de acuerdo con la dirección MAC de destino de las tramas en la red.
-                        .card
-                            #headingSeven.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSeven', aria-expanded='false', aria-controls='collapseFive')
-                                        h2.mb-0.collapsable-title Cableado
-                            #collapseSeven.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                   p.parrafo Los tipos de cableado de red más populares son: par trenzado, cable coaxial y fibra óptica, además se pueden realizar conexiones a través de radio o microondas, dependiendo el tipo de red y los requerimientos de esta, velocidad y longitud, se debe considerar el tipo de cable a utilizar.
-
-                        .card
-                            #headingEight.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseEight', aria-expanded='false', aria-controls='collapseSix')
-                                        h2.mb-0.collapsable-title Protocolo
-                            #collapseEight.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                    p.parrafo El protocolo es la parte software de la red. Se encarga básicamente de establecer las reglas de comunicación entre equipos de la red, definir el formato de las informaciones que circulan por la red y también debe habilitar mecanismos para permitir la identificación de los equipos en la red. Existen infinidad de protocolos en función de la red con la que se está trabajando. El más utilizado actualmente es el conocido como TCP / IP. 
-            hr.line
-            .row.mt-5 
-                .col-sm-12.col-lg-5 
-                    .h2c 1.3 Medios de transmisión
-                    p.parrafo Los medios de transmisión son las vías por las cuales se comunican los datos. Dependiendo de la forma de conducir la señal a través del medio o soporte físico, 
-                .col-sm-12.col-lg-7
-                    img.img-a(src="assets/images/pages/ilustraciones/img14.svg", alt='...').img-fluid
-
-            .row.mt-5 
-                .col-sm-12.col-lg-6  
-                    .jumbotron.bg2.my-auto
-                        img.img-a(src="assets/images/pages/ilustraciones/img15.svg", alt='...').img-fluid.d-block.m-auto
-                .col-sm-12.col-lg-6  
-                    .h1cc.mt-3 Medio de transmisión guiados.
-                    p.parrafo.mt-3 Los medios de transmisión guiados están constituidos por cables que se encargan de la conducción (o guiado) de las señales desde un extremo al otro. Las principales características de los medios guiados son el tipo de conductor utilizado, la velocidad máxima de transmisión, las distancias máximas que puede ofrecer entre repetidores, la inmunidad frente a interferencias electromagnéticas, la facilidad de instalación y la capacidad de soportar diferentes tecnologías de nivel de enlace. Dentro de los medios de transmisión guiados, los más utilizados en el campo de las telecomunicaciones y la interconexión de computadoras son tres:
-
-                    img.img-a(src="assets/images/pages/ilustraciones/img16.svg", alt='...').img-fluid
-            .row.mt-5
-                .col-sm-12.col-lg-6   
-                    .h1cc Medio de transmisión no guiados.
-                    p.parrafo.mt-3 Los medios no guiados o comunicación sin cable transportan ondas electromagnéticas sin usar un conductor físico, sino que se radian a través del aire, por lo que están disponibles para cualquiera que tenga un dispositivo capaz de aceptarlas. En este tipo de medios tanto la transmisión como la recepción de información se lleva a cabo mediante antenas. Según el rango de frecuencias de trabajo, las transmisiones no guiadas se pueden clasificar en tres tipos:
-
-                    img.img-a(src="assets/images/pages/ilustraciones/img18.svg", alt='...').img-fluid 
-                .col-sm-12.col-lg-6  
-                    .jumbotron.bg2.my-auto
-                        img.img-a(src="assets/images/pages/ilustraciones/img17.svg", alt='...').img-fluid.d-block.m-auto
-            hr.line.mt-5            
-            .h2c.mt-5 1.4 Protocolos de comunicación
-            .row 
-                p.parrafo Está claro que las personas utilizan diferentes formas de comunicación. Las palabras, los gestos, los mensajes escritos nos permiten establecer esta comunicación, pero ¿cómo entendernos sin un lenguaje común?, ¿qué normas seguimos para establecer esta comunicación?, ¿nos comunicamos de la misma forma con todas las personas? El ejemplo de la Torre de Babel, la cual no llegó a construirse porque se hablaban multitud de lenguas, nos sirve para entender la importancia de la comunicación.
-                .col-sm-12.col-lg-6 
-                    p.parrafo Cuando se trata de la comunicación entre ordenadores primero se deben conocer cuáles son las normas que permiten esta comunicación, o lo que es lo mismo, qué protocolo de comunicación utilizan. Para Stallings, Tanenbaum y Stevens (2000), un protocolo de red es un conjunto de normas que permite la comunicación entre ordenadores, estableciendo la forma de identificación de éstos en la red, la forma de transmisión de los datos y la forma en que la información debe procesarse. 
-
-                    p.parrafo Los protocolos pueden ser implementados mediante hardware (tarjetas de red), software (drivers), o una combinación de ambos.
-                .col-sm-12.col-lg-6 
-                    img.img-a(src="assets/images/pages/ilustraciones/img19.svg", alt='...').img-fluid
-                
-                //Arreglar aliniacion de imagen
-            .row.mt-5
-                .col-sm-12.col-lg-12
-                    .img-container 
-                        img.img-a(src="assets/images/pages/ilustraciones/img20.svg", alt='...').img-fluid.d-block.m-auto
-            
-            hr.line
-
-            .h2c 1.5 Clasificación de redes
-            p.parrafo La clasificación de las redes puede realizarse desde distintos puntos de vista, pero la más general es la que se realiza en función del número de equipos conectados y la distancia a la que se encuentran:
-            .row 
-                .col-5.d-none.d-sm-block.col-lg-4.col-md-12
-                    img.img-a(src="assets/images/pages/ilustraciones/img21.svg", alt='...').img-fluid.d-block.m-auto
-                .col-sm-12.col-lg-8
-                     #accordionExample.accordion
-                        .card
-                            #headingOne.card-header
-                                h2.mb-0
-                                    button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
-                                        h2.mb-0.collapsable-title Por alcance
-                            #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
-                                .card-body
-                                    ul.ul-bullet 
-                                        li Red de área personal o PAN (personal area network)
-                                        br
-                                        li Red de área local o LAN (local area network)
-                                        br
-                                        li Una red de área de campus o CAN (campus area network)
-                                        br
-                                        li Una red de área metropolitana (metropolitan area network o MAN, en inglés)
-                                        br
-                                        li Las redes de área amplia (wide area network, WAN)
-                                        br
-                                        li Una red de área de almacenamiento, en inglés SAN (storage area network)
-                                        br
-                                        li Una Red de área local virtual (Virtual LAN, VLAN).            
-                        .card
-                            #headingTwo.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                                        h2.mb-0.collapsable-title Por tipo de conexión
-                            #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
-                                .card-body
-                                    ul.ul-bullet 
-                                        li Medios guiados
-                                        li Medios no guiados  
-                                    
-                        .card
-                            #headingThree.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                                        h2.mb-0.collapsable-title Por relación funcional
-                            #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
-                                .card-body
-                                    ul.ul-bullet 
-                                        //Agregar negrita a arquitectura o relacion
-                                        li Es una arquitectura o relación que consiste en realizar peticiones o solicitudes a un componente de la red informática llamado servidor y que puede estar alojado en la misma red del peticionario. Este componente a su vez puede o no responder satisfactoriamente la petición y si ésta es positiva entonces se dará lugar a un servicio.}
-                                        br
-                                        // Aregar negrillas a Peer-to-peer
-                                        li Peer-to-peer.   Consiste en la conformación de una red de datos en la que no hay componentes dominantes o que dirijan a los demás integrantes de la malla. Es decir, cada elemento de la red tiene los mismos privilegios y restricciones que cualquier otro.
-                                    
-                        .card
-                            #headingFour.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
-                                        h2.mb-0.collapsable-title Por tecnología
-                            #collapseFour.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                    ul.ul-bullet 
-                                        //Agregar negrita a arquitectura o relacion
-                                        li Red Point-To-Point es aquella en la que existe multitud de conexiones entre parejas individuales de máquinas. Este tipo de red requiere, en algunos casos, máquinas intermedias (routers)que establezcan rutas para que puedan transmitirse paquetes de datos.
-                                        br
-                                        // Aregar negrillas a Peer-to-peer
-                                        li Red Broadcast se caracteriza por transmitir datos por un sólo canal de comunicación que comparten todas las máquinas de la red. En este caso, el paquete enviado es recibido por todas las máquinas de la red, pero únicamente la destinataria puede procesarlo.
-
-                        .card
-                            #headingFive.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
-                                        h2.mb-0.collapsable-title Por la direccionalidad de los datos
-                            #collapseFive.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                    ul.ul-bullet 
-                                        //Agregar negrita a arquitectura o relacion
-                                        li Simplex o Unidireccional:Consiste en la transmisión de información en un solo sentido donde el emisor no tiene retroalimentación alguna por parte del receptor. Un ejemplo de este tipo de transmisión son las emisoras radiales, donde el oyente necesita de un radio receptor pero éste aparato no permite enviar señal alguna.
-                                        br
-                                        // Aregar negrillas a Peer-to-peer
-                                        li Half-Duplex o Bidireccional:  Este tipo de comunicación permite que la información se transmita en ambos sentidos, pero con la restricción de uno solo a la vez. Es decir, para que uno de los dos involucrados (emisor o receptor) pueda transmitir, el otro debe estar en silencio. También es denominado semi-duplex. Un ejemplo de este tipo de transmisión son los radios de la policía. 
-                                        br
-                                        li Full-Duplex: ambos pueden transmitir y recibir a la vez la misma información. Un claro ejemplo de este tipo de transmisión son los teléfonos móviles o celulares.
-                        .card
-                            #headingSix.card-header
-                                h2.mb-0
-                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
-                                        h2.mb-0.collapsable-title Por grado de difusión
-                            #collapseSix.collapse(aria-labelledby='headingFour', data-parent='#accordionExample')
-                                .card-body
-                                    ul.ul-bullet 
-                                        //Agregar negrita a arquitectura o relacion
-                                        li Una intranet es una red de computadoras que utiliza alguna tecnología de red para usos comerciales, educativos o de otra índole de forma privada, esto es, que no comparte sus recursos o su información con redes ilegítimas.
-                                        br
-                                        // Aregar negrillas a Peer-to-peer
-                                        li Internet es un conjunto descentralizado de redes de comunicación interconectadas que utilizan la familia de protocolos TCP/IP, garantizando que las redes físicas heterogéneas que la componen funcionen como una red lógica única, de alcance mundial.
-            hr.line.mt-5
-            .h2c 1.6 Topologías de redes 
-            .row.mt-5 
+        .row 
+            .col-xs-12.col-md-12.col-lg-8.my-auto
+                p.parrafos.d-block.my-auto Actualmente la mayoría de las redes de conexión de datos utilizan el protocolo TCP/IP, en el cual se basa el direccionamiento IP. Todos y cada uno de los equipos conectados a internet están compuestos de una dirección IP (en IPv4 o IPv6) y una máscara de red que ayuda a determinar la red a la que pertenecen.
+            .col-xs-12.col-md-12.col-lg-4
+                .img-container.mt-5 
+                    img.card-img-center(src="assets/images/pages/ilustraciones/img9.svg", alt='...').img-fluid.d-block.m-auto
+            .col-xs-12.col-md-12.col-lg-12
+                .img-container.mt-5 
+                    img.card-img-center(src="assets/images/pages/ilustraciones/img41.svg", alt='...').img-fluid.d-block.m-auto
+                .img-container.mt-5 
+                    img.card-img-center(src="assets/images/pages/ilustraciones/img10.svg", alt='...').img-fluid.d-block.m-auto
+        hr.line
+        .h2c 1.1 Direcciones IP
+        p.parrafos.mt-3 Las direcciones IP se dividen en dos grandes grupos, IPv4 e IPv6, las cuales entraremos a estudiar en detalle más adelante. Estas direcciones son la identificación que cada uno de los dispositivos conectados en red tienen asociados para poder enviar y recibir datos; están compuestas por una porción de red y una porción de host.
+        .row.mt-3 
                 .col-sm-12.col-lg-6
                     .div.jt1
-                        p.pf1 En cuanto a la topología física, existen tres tipos considerados básicos para montar una red:
-                    .div.jt2.mt-3
-                        ul.ul-bullet.mt-0.mb-0 
-                            li La red en bus consiste en la conexión de todos los nodos de la red a un solo canal de comunicación lo que genera una serie de desventajas como degradación de la señal, pobre escalamiento entre otras.
-
-                    .div.jt2.mt-3 
-                        ul.ul-bullet 
-                            li En una red en anillo cada estación está conectada a la siguiente y la última está conectada a la primera.
-                    .div.jt2.mt-3 
-                        ul.ul-bullet 
-                            li En una red en estrella las estaciones están conectadas directamente a un punto central y todas las comunicaciones se han de hacer necesariamente a través de este.
-               
+                        .h2c.mx-auto Revisando la siguiente analogía podrá comprender mejor el concepto.
+                    p.parrafos.mt-4 Por un momento imagine la dirección de su casa, la cual está comprendida por una estructura ejemplo, 
+                        b Calle 1 # 1 – 01
+                        b-none , en esta dirección se puede analizar que la parte de Calle 1 # 1 es un grupo en común para aquellas viviendas que coincidan, lo que vendría siendo la porción de red para la 
+                        b dirección IP 
+                        b-none y la nomenclatura del 01 (después del guion de la dirección) el cual representa una vivienda en específico de la Calle 1 # 1, lo que se análoga como la porción de host de la 
+                        b dirección IP. 
                 .col-sm-12.col-lg-6
-                    p.parrafo El resto de las topologías físicas que se pueden dar son combinaciones de las anteriores.
-                    img.img-a(src="assets/images/pages/ilustraciones/img22.svg", alt='...').img-fluid
-                    div.ct1.mt-5
-                    .row
-                        .col-3.d-inline-block 
-                            img.img-a.pull-left(src="assets/images/pages/ilustraciones/img23.svg", alt='...').img-fluid
-                        .col-9.d-inline-block
-                            p.parrafo Broadcast: se basa en que cada ordenador envía sus datos hacia todos los demás del medio de red. Las operaciones se realizan por orden de llegada como si fuese Ethernet.
-                    div.ct1.mt-5
-                    .row
-                        .col-3.d-inline-block 
-                            img.img-a(src="assets/images/pages/ilustraciones/img24.svg", alt='...').img-fluid
-                        .col-9.d-inline-block
-                            p.parrafo Transmisión de tokens: se basa en la transmisión de forma secuencial de tokens electrónicos a cada ordenador. Hay dos tipos de redes que utilizan esta topología: TokenRing y FDDI.
-
-            hr.line        
-            
-            .h2c 1.7 Modelo TCP/IP y OSI 
+                    .img-container 
+                        img.card-img-center(src="assets/images/pages/ilustraciones/img11.svg", alt='...').img-fluid.d-block.m-auto
+        .img-container.mt-3
+            img.card-img-center(src="assets/images/pages/ilustraciones/img12.svg", alt='...').img-fluid2.d-block.m-auto
+        hr.line.mt-6
+        .card.mt-4
+            .card-body
                 .row
-                     
-                        .col-xs-12.col-sm-12.col-md-12.col-lg-6.div-blue
-                            .row 
-                                .col-12.pt-3
-                                    img.img-a(src="assets/images/pages/ilustraciones/img37.svg", alt='...').img-fluid.img-div
-                                .col-12 
-                                    .hvc TCP/IP
-                                    div.textdiv
-                                        p.parrafo-d De acuerdo con Corona (2004), los protocolos IP (Protocolo de Internet) y TCP (Protocolo de Control de Transmisión) se originaron a principios de 1980 y fueron adoptados por la red ARPANET en 1983, que estaba integrada por cientos de computadoras de universidades, centros de investigación militar y algunas empresas. El e-mail (electronic mail) fue el servicio más comúnmente utilizado entonces, mientras que el sistema operativo más empleado era UNIX, en su versión BSD UNIX, desarrollada por la Universidad de California. Fue a mediados de los ochenta cuando fue creado el protocolo TCP/IP con la finalidad de contar con un lenguaje común a todas las computadoras conectadas a Internet, ya con la unión de las redes ARPANET, CSNET y MILNET. El protocolo TCP/IP representa, entonces, las reglas que hacen posible la conexión de computadoras de marcas y tecnología diferentes.
-                        .col-xs-12.col-sm-12.col-md-12.col-lg-6.div-cyan
-                            .row 
-                                .col-12.pt-3
-                                    img.img-a(src="assets/images/pages/ilustraciones/img38.svg", alt='...').img-fluid.img-div
-                                .col-12 
-                                    .hvb OSI
-                                    div.textdiv
-                                        p.parrafo-b A principios de los años ochenta, la Organización Internacional para la Estandarización (ISO, International Standards Organization) desarrolló el modelo de referencia de interconexión de sistemas abiertos (OSI, Open Systems Interconnect) para estandarizar la forma en que se comunican los dispositivos en una red. Este modelo representó un gran paso en aras de asegurar la interoperabilidad entre dispositivos de red.El modelo OSI divide las comunicaciones de red en siete capas diferenciadas. Si bien existen otros modelos, actualmente la mayoría de los proveedores de red desarrollan sus productos utilizando este marco.
+                    .col-3
+                        #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+                            a#v-pills-one-tab.nav-link.active(data-toggle='pill', href='#v-pills-one', role='tab', aria-controls='v-pills-one', aria-selected='true') Red por defecto
+                            a#v-pills-two-tab.nav-link(data-toggle='pill', href='#v-pills-two', role='tab', aria-controls='v-pills-two', aria-selected='false') Clase A
+                            a#v-pills-three-tab.nav-link(data-toggle='pill', href='#v-pills-three', role='tab', aria-controls='v-pills-three', aria-selected='false') Clase B
+                            a#v-pills-four-tab.nav-link(data-toggle='pill', href='#v-pills-four', role='tab', aria-controls='v-pills-four', aria-selected='false') Clase C
+                            a#v-pills-five-tab.nav-link(data-toggle='pill', href='#v-pills-five', role='tab', aria-controls='v-pills-five', aria-selected='false') Clase D
+                            a#v-pills-six-tab.nav-link(data-toggle='pill', href='#v-pills-six', role='tab', aria-controls='v-pills-six', aria-selected='false') Clase E
+                            a#v-pills-seven-tab.nav-link(data-toggle='pill', href='#v-pills-seven', role='tab', aria-controls='v-pills-seven', aria-selected='false') Broadcast
+                    .col-9
+                        #v-pills-tabContent.tab-content
+                            #v-pills-one.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-one-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Red por defecto
+                                            p.parrafos.mt-3 Está compuesta por la dirección 0.0.0.0 y se denomina ruta “quad-zero”.
+                                        .col-6
+                                             .img-container 
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img13.svg", alt='...').img-fluid.d-block.m-auto
+                            #v-pills-two.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-two-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Clase A
+                                            p.parrafos.mt-3.d-block Este grupo de direcciones IP es el más grande del protocolo de internet en su versión 4, en donde el primer octeto empieza en 0 y termina en 127, el resto de los octetos están destinados para los hosts.
+                                            br
+                                            |La cantidad total de subredes son 224-2 = 16.777.214 y de hosts 231-2 = 2.147.483.648 de direcciones únicas.
+                                        .col-6
+                                             .img-container 
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img14.svg", alt='...').img-fluid.d-block.m-auto
+                            #v-pills-three.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-three-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Clase B
+                                            p.parrafos.mt-3.d-block Los octetos que se ocupan para este grupo son los dos primeros, empezando el primer octeto en el rango de 128 al 191, y los dos octetos restantes están disponibles para los hosts. 
+                                            br 
+                                            |La cantidad de redes de la clase B está compuesta por 214 = 16.384 con 65.534 hosts por red para un total de 230-2 = 1.073.741.824 de direcciones únicas. 
+                                        .col-6
+                                             .img-container.float-center
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img15.svg", alt='...').img-fluid.d-block.my-auto
+                            #v-pills-four.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-four-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Clase C
+                                            p.parrafos.mt-3.d-block Estas direcciones IP son destinadas directamente para pymes o redes de hogar, estas direcciones ocupan los 3 primeros octetos teniendo como valor del primer octeto el rango de 192 al 223. 
+                                            br
+                                            |Existen 221= 2.097.152 redes compuestas por 28-2 = 256 hosts, para un total de 229=536.870.912 direcciones IP únicas.
+                                        .col-6
+                                             .img-container.float-center
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img16.svg", alt='...').img-fluid.d-block.my-auto
+                            #v-pills-five.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-five-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Clase D
+                                            p.parrafos.mt-3.d-block Es un grupo de direcciones especiales dirigida para multicast. Se compone de 228 = 268.435.456 direcciones IP únicas.
+                                        .col-6
+                                             .img-container.float-center
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img17.svg", alt='...').img-fluid.d-block.my-auto
+                            #v-pills-six.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-six-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Clase E
+                                            p.parrafos.mt-3.d-block Este grupo está reservado para propósitos experimentales.
+                                        .col-6
+                                             .img-container.float-center
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img18.svg", alt='...').img-fluid.d-block.my-auto
+                            #v-pills-seven.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-seven-tab')
+                                .jumbotron.div-t1
+                                    .row
+                                        .col-6.my-auto 
+                                            .h2c Broadcast
+                                            p.parrafos.mt-3.d-block Cuando se envía un mensaje entre hosts en una red se envían como broadcast. Siempre utilizan la dirección IP 255.255.255.255.
+                                        .col-6
+                                             .img-container.float-center
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img19.svg", alt='...').img-fluid.d-block.my-auto
+        hr.line.mt-6
+        #accordionExample.accordion
+            .card
+                #headingOne.card-header
+                    h2.mb-0
+                        button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                            .h2c 1.2.1 Accesibilidad
+                #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+                    .card-body
+                        p.parrafos De acuerdo con la Federación de enseñanza de Andalucía (2010), la accesibilidad se da desde IP públicas y privadas:
+                        .row.justify-content-center.mt-5
+                            .col-10.col-md-8
+                                .card-media.shadow
+                                    .card-media__body                
+                                        figure.card__figure
+                                            img(src="assets/images/pages/ilustraciones/img20.svg").img-fluid
+                                        p.card__copy
+                                            span 
+                                                .h2c Direcciones IP Públicas
+                                                hr.line
+                                                p.parrafos Aquellas que son visibles por todos los hosts conectados a Internet. Para que una máquina sea visible desde Internet debe tener asignada obligatoriamente una dirección IP pública, y no puede haber dos hosts con la misma dirección IP pública.   
+                        .row.justify-content-center.mt-3
+                            .col-10.col-md-8
+                                .card-media.shadow
+                                    .card-media__body                
+                                        figure.card__figure
+                                            img(src="assets/images/pages/ilustraciones/img21.svg").img-fluid
+                                        p.card__copy
+                                            span 
+                                                .h2c Direcciones IP Privadas
+                                                hr.line
+                                                p.parrafos Aquellas que son visibles únicamente por los hosts de su propia red o de otra red privada interconectada por medio de routers. 
+                                                br
+                                                |Los hosts con direcciones IP privadas no son visibles desde Internet, por lo que si quieren salir a ésta deben hacerlo a través de un router o un proxy que tenga asignada una IP pública. 
+                                                br
+                                                |Las direcciones IP privadas se utilizan en redes privadas para interconectar los puestos de trabajo.                  
+            .card
+                #headingtwo.card-header
+                    h2.mb-0
+                        button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapsetwo', aria-expanded='true', aria-controls='collapsetwo')
+                            .h2c 1.2.2 Perdurabilidad
+                #collapsetwo.collapse.show(aria-labelledby='headingtwo', data-parent='#accordionExample')
+                    .card-body
+                        p.parrafos De acuerdo con la Federación de enseñanza de Andalucía (2010), la accesibilidad se da desde IP públicas y privadas:
+                        .row.justify-content-center.mt-5
+                            .col-10.col-md-8
+                                .card-media.shadow
+                                    .card-media__body                
+                                        figure.card__figure
+                                            img(src="assets/images/pages/ilustraciones/img22.svg").img-fluid
+                                        p.card__copy
+                                            span 
+                                                .h2c Direcciones IP Estáticas
+                                                hr.line
+                                                p.parrafos Aquellas asignadas de forma fija o permanente a un host determinado, por lo que cuando una máquina con este tipo de IP se conecte a la red lo hará siempre con la misma dirección IP. 
+                                                br
+                                                |Normalmente son usados por servidores web, routers o máquinas que deban estar conectadas a la red de forma permanente, y en el caso de direcciones IP públicas estáticas hay que contratarlas, generalmente a un ISP (Proveedor de Servicios de Internet).
 
-           
+   
+                        .row.justify-content-center.mt-3
+                            .col-10.col-md-8
+                                .card-media.shadow
+                                    .card-media__body                
+                                        figure.card__figure
+                                            img(src="assets/images/pages/ilustraciones/img23.svg").img-fluid
+                                        p.card__copy
+                                            span 
+                                                .h2c Direcciones IP Dinámicas
+                                                hr.line
+                                                p.parrafos Aquellas que son asignadas de forma dinámica a los host que desean conectarse a Internet y no tienen una IP fija. 
+                                                br
+                                                |Un ejemplo típico de este tipo de direcciones IP es el de una conexión a Internet mediante módem. 
+                                                br
+                                                |El ISP dispone de un conjunto de direcciones IP para asignar a sus clientes, de forma que cuando uno de ellos se conecta mediante módem se le asigna una de estas IP, que es válida durante el tiempo que dura la conexión. Cada vez que el usuario se conecte lo hará pues con una dirección IP distinta.        
+        .h2c.mt-5 1.3 Máscara de red y nombre de dominio
+        .row.mt-5
+            .col-lg-6.col-md-12.col-sm-12
+                .jumbotron
+                    .img-container  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img24.svg", alt='...').img-fluid2
+            .col-lg-6.col-md-12.col-sm-12 
+                .h1cc Mascara de red
+                p.parrafo.mt-3 Cuando dos o más redes diferentes se encuentran conectadas entre sí por medio de un router, éste debe disponer de algún medio para diferenciar los paquetes que van dirigidos a los host de cada una de las redes. Es aquí donde entra en juego el concepto de máscara de red, que es una especie de dirección IP especial que permite efectuar este enrutamiento interno de paquetes.
+                div.d-block-m-auto
+                    div.div-list-arrow.d-block.m-auto
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid2
+                        p.parrafos 
+                            b Red Clase A 
+                            b-none ……… Máscara de red = 255.0.0.0 
+                        hr.line
+                    div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Clase B
+                            b-none ……… Máscara de red = 255.255.0.0  
+                        hr.line
+                    div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Clase C
+                            b-none ……… Máscara de red = 255.255.255.0
+                p.parrafos.mt-3 La máscara de red posee la importante propiedad de que cuando se combina con la dirección IP de un host se obtiene la dirección propia de la red en la que se encuentra el mismo.
+        .row.mt-5
+            .col-lg-6.col-md-12.col-sm-12 
+                .h1cc.text-right Nombre de dominio
+                p.parrafo.mt-3.text-right Como una dirección IP escrita en cualquiera de estos formatos es difícil de recordar, se optó por poder asignar un nombre de dominio a cada dirección IP, nombre que fuera más fácil de recordar. Este es el motivo por el que nos referimos a la dirección del SENA como www.sena.edu.co, y no como 186.113.7.153, que podría ser su dirección IP expresada en forma decimal. 
+                br
+                p.parrafo.text-right Pero entonces, ¿cómo sabe el computador a qué IP nos referimos para mandar los paquetes? En este apartado es donde entran en juego el Domain Name System (DNS - Sistema de Nombres de Dominio), que consiste en una serie de tablas en las que se registra la relación IP-nombre de dominio.
+            .col-lg-6.col-md-12.col-sm-12
+                .jumbotron
+                    .img-container  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img26.svg", alt='...').img-fluid2
+        hr.line
+        .row.mt-5   
+            .col-6
+                .h2c 1.4 Planificaciones de direcciones IP 
+                p.parrafos.mt-3 Con TCP/IP se puede hacer Subnetting, o sea, dividir las redes de clases A, B y C en redes más pequeñas.
+                img.card-img-top(src="assets/images/pages/ilustraciones/img28.svg", alt='...').img-fluid
+            .col-6
+                .img-container  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img27.svg", alt='...').img-fluid
+                div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Paso 1: 
+                            b-none cuántos dispositivos tendrá su red. 
+                        hr.line
+                div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Paso 2: 
+                            b-none crea las subredes necesarias.
+                        hr.line
+                div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Paso 3: 
+                            b-none especifica la máscara de subred.
+                        hr.line
+                div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Paso 4: 
+                            b-none especifica las direcciones IP de las subredes. 
+                        hr.line
+                div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Paso 5: 
+                            b-none define las direcciones de boradcast de las subredes. 
+                        hr.line
+                div.div-list-arrow.d-block.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Red Paso 6: 
+                            b-none define el rango de las máquinas en cada subred.
+        hr.line
+        .row.mt-5
+            .col-6
+                .h2c.mt-5 1.5 ¿Cómo se direcciona desde máquina?
+                p.parrafos.mt-3 Cuando un host desea enviar una serie de datos a otro, estos son convertidos a un formato de red apropiado (capa de Aplicación) y divididos en una serie de unidades, denominadas segmentos (capa de Transporte), que son enumerados para su correcto reensamble en la máquina destino.
+            .col-5
+                .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img29.svg", alt='...').img-fluid
+            .col-1
+        p.parrafos.mt-3 Posteriormente, son pasados a la capa de Internet, que les coloca las direcciones IP de la máquina origen y de la máquina destino. Las unidades así obtenidas se conocen con el nombre de paquetes. Entonces son pasados a la capa de Enlace de Datos, que les añade las direcciones MAC de ambas máquinas y un número calculado para la verificación posterior de errores en el envío, pasando entonces a denominarse tramas. 
+        .row    
+            .col-5
+              .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img30.svg", alt='...').img-fluid  
+            .col-7 
+                p.parrafos.mt-5 Por último, las tramas son pasadas a la capa Física que las une en trenes de bits apropiados para su transformación en impulsos eléctricos o en ondas, que posteriormente son enviados al medio.
+                br
+                |Cuando los impulsos llegan a la máquina destino el proceso se invierte, obteniendo la aplicación receptora los datos en su formato original. 
+                br
+                |A pesar de que lo que se transmite por el medio físico son impulsos eléctricos, se suele hablar de paquetes transmitidos, ya que son las unidades de información con entidad propia. 
+        #accordionExample2.accordion.mt-5
+            .card
+                #headingA.card-header
+                    h2.mb-0
+                        button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseA', aria-expanded='true', aria-controls='collapseA')
+                            .h2c 1.5.1 Comunicación entre computadores en red
+                #collapseA.collapse.show(aria-labelledby='headingA', data-parent='#accordionExample2')
+                    .card-body
+                        p.parrafos Imaginemos una red formada por varios hosts, como la representada en la siguiente imagen:
+                        .img-container.mt-6  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img31.svg", alt='...').img-fluid 
+                        p.parrafos.mt-6 El 
+                            b host A
+                            b-none tiene la dirección 
+                            b (IP=210.23.5.14)
+                            b-none , desea comunicarse con el 
+                            b host C
+                            b-none con dirección 
+                            b (IP=210.23.5.27)
+                            b-none , construye sus paquetes de datos y la capa de Internet les coloca su dirección 
+                            b IP (emisor)
+                            b-none y la de 
+                            b C (destinatario)
+                            b-none , pasándose a la capa de Enlace de Datos, que no sabe la dirección MAC de C. Para averiguar, envía un mensaje a todas las máquinas de la red, conocido como petición 
+                            b ARP
+                            b-none , preguntando cuál es la dirección MAC correspondiente a la 
+                            b IP 210.23.5.27.
+                            b-none Las peticiones 
+                            b ARP 
+                            b-none son de tipo broadcast, es decir, peticiones que son enviadas a todos y cada uno de los equipos en la red.
+                        .img-container.mt-5
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img32.svg", alt='...').img-fluid2 
+            .card
+                #headingB.card-header
+                    h2.mb-0
+                        button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseB', aria-expanded='true', aria-controls='collapseB')
+                            .h2c 1.5.2 Comunicación entre ordenadores en dos redes. Routers.
+                #collapseB.collapse.show(aria-labelledby='headingB', data-parent='#accordionExample')
+                    .card-body
+                        .row 
+                            .col-9
+                                p.parrafos Imaginemos ahora que el 
+                                    b host C (IP=190.200.23.5)
+                                    b-none no se encuentra en la misma red que 
+                                    b A (IP=210.23.5.14). 
+                                    b-none Cuando este envíe el broadcast preguntando la dirección MAC de 
+                                    b C 
+                                    b-none nadie le responderá, por lo que, si no se hace nada al respecto, la comunicación entre ambas máquinas resultará imposible. Los encargados de solucionar este problema son unos dispositivos de red especiales, llamados routers, que conectan dos o más redes, sirviendo de enlace entre ellas. Los routers trabajan en la capa de Internet, encargándose de encaminar o enrutar paquetes de datos entre máquinas de redes diferentes. 
+                            .col-3
+                                .img-container  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img33.svg", alt='...').img-fluid  
+                        p.parrafos Para poder funcionar de esta forma deben pertenecer a cada una de las redes que conectan, como si fueran un host más de las mismas. De esta forma, un router que conecta dos redes debe tener una tarjeta de red diferente para cada una de las redes y, consecuentemente, dos direcciones MAC diferentes. También debe tener asignada una dirección IP en cada una de las dos redes, ya que si no sería imposible la comunicación con las máquinas de estas. 
+                        br
+                        |El esquema de dos redes conectadas por un router podría ser el representado en la siguiente imagen:
+                        .img-container.mt-5  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img34.svg", alt='...').img-fluid2  
+                        p.parrafos.mt-5 Ahora, cuando un host envía una petición ARP para averiguar la dirección MAC correspondiente a una IP dada y no es respondido por ningún equipo de su red, envía los paquetes correspondientes a un router que tiene configurado para este tipo de envíos, denominado gateway por defecto. Para la Federación de enseñanza de Andalucía (2010), una vez que el router recibe los paquetes de datos utiliza un parámetro especial, denominado máscara de red, que combinado con la dirección IP destino le da la red a la que pertenece el host buscado. Pasa entonces los paquetes a la red a la que pertenece C, haciendo una nueva petición de broadcast preguntando la MAC de C. Este le responde, y entonces el router le envía los paquetes directamente. Si C desea responder a A, el proceso se invierte.
+                         .img-container.mt-5  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img35.svg", alt='...').img-fluid2 
+        .h2c.mt-3 1.6 Subredes, VLSM y Sumarización
+        div.player.mt-5
+            .embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item(width='560', height='315', src='https://www.youtube.com/embed/z-_4zQP-V5g', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')    
+        hr.line.mt-5
+        .h2c.mt-3 1.7 Matemática de red
+        .h2c.mt-3 Bit y Bytes.
+        p.parrafos Un bit está compuesto por los valores 0 y 1. El 0 para indicar que no hay comunicación y el 1 que sí la hay o, dicho de otra manera: 0 para falso y 1 para verdadero. 
+        br
+        |Los computadores trabajan con grupos de 8 bits, los cuales se llaman bytes. El intervalo de valores de un byte está en el rango de 0 a 255. De esta manera, cuando se menciona que una dirección IPv4 está compuesta de 4 octetos, quiere decir que se compone de 4 bytes.
+        .row 
+            .col-lg-4.col-md-6
+                .img-container.mt-5  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img36.svg", alt='...').img-fluid2 
+            .col-lg-4.col-md-6
+                .img-container.mt-5  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img37.svg", alt='...').img-fluid2  
+            .col-lg-4.col-md-12
+                .img-container.mt-5  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img38.svg", alt='...').img-fluid2 
+        #accordionExample3.accordion.mt-5
+            .card
+                #headingD.card-header
+                    h2.mb-0
+                        button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseD', aria-expanded='true', aria-controls='collapseD')
+                            .h2c 1.7.1 Binario a decimal - Decimal a binario  
+                #collapseD.collapse.show(aria-labelledby='headingD', data-parent='#accordionExample3')
+                    .card-body
+                        div.player
+                            .embed-responsive.embed-responsive-16by9
+                                iframe.embed-responsive-item(width='560', height='315', src='https://www.youtube.com/embed/z-_4zQP-V5g', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+        hr.line
+        .h2c 1.8 IPv6
+        p.parrafos Debido al crecimiento exponencial que tuvo la implementación del protocolo de internet en su versión 4 y, partiendo que el diseño de esta fue casi un experimento, sin llegar a imaginar el éxito comercial que iba a tener y que solo dispone de 232 direcciones no se planteó que en pocos meses iba a quedar corta en espacio. 
+        .row 
+            .col-6
+                p.parrafo Por tal motivo se contempló la implementación de una nueva versión llamada IPv6, está dispone de 2128 direcciones o, dicho de otra manera, 340 sextillones. Esta versión fue trabajada por la organización de estandarización de los protocolos de internet (IETF, Internet Engineering Task Force) en los últimos años. El despliegue de IPv6 se irá realizando gradualmente, en una coexistencia ordenada con IPv4, al que se irá desplazando a medida que dispositivos electrónicos con conexión a Internet, equipos de red, aplicaciones, contenidos y servicios se vayan adaptando a la nueva versión del protocolo de Internet.
+
+            .col-6  
+                .img-container  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img39.svg", alt='...').img-fluid2
+        .img-container.mt-5  
+                                    img.card-img-top(src="assets/images/pages/ilustraciones/img40.svg", alt='...').img-fluid2               
+
+
+
+
+        
+
+
+
+
+
+                        
+
             
-            hr.line.mt-5
-            .h2c 1.8 Tecnología Ethernet
-            .row.mt-5  
-                .col-sm-12.col-lg-4
-                    img.img-a(src="assets/images/pages/ilustraciones/img27.svg", alt='...').img-fluid.d-block.m-auto
-                .col-sm-12.col-lg-8
-                    p.parrafo.mt-3 Es una serie de estándares establecidos para la implementación de redes de área local o LAN. Para Forouzan (2002), se caracteriza por ser más estable, confiable y rápida en la transmisión de datos, ya que la interferencia con otros dispositivos de la misma red es mínima. Otra ventaja que presenta esta serie de estándares es la velocidad de transmisión pues puede ser del orden de los 100 Gbit/s. Para poder implementar una red tipo Ethernet es necesario contar con una serie de dispositivos que cumplen diferentes funciones. Algunos de ellos son: enrutadores, switches, cables UTP, bridges, entre otros.
-                     img.img-a(src="assets/images/pages/ilustraciones/img35.svg", alt='...').img-fluid.mt-3
-            .jumbotron.borderjb.mt-5
-                p.parrafo Los objetivos principales de Ethernet son consistentes con los que se han convertido en los requerimientos básicos para el desarrollo y uso de redes LAN: 
-                .row 
-                    .col-sm-12.col-lg-4 
-                        ul.ul-bullet.my-auto.d-block.m-auto
-                            li Simplicidad
-                            li Bajo costo 
-                            li Compatibilidad 
-                            li Direccionamiento flexible
-                            li Equidad 
-                            li Progreso 
-                            li Bajo retardo 
-                            li Estabilidad 
-                            li Mantenimiento 
-                            li Arquitectura en capas
-                    .col-sm-12.col-lg-8
-                        .img-container
-                            img.img-a(src="assets/images/pages/ilustraciones/img28.svg", alt='...').img-fluid 
-                .h2c 1.8.2 La trama de Ethernet 
-                p.parrafo.mt-3 En una red Ethernet los dispositivos intercambian paquetes de datos entre sí, los llamados paquetes Ethernet. En su contenido se incluye la trama Ethernet (a menudo denominada también trama de datos), que a su vez se divide en varios conjuntos de datos. Estos registros consisten en código binario que proporciona información importante, incluyendo direcciones, información de control, datos de uso y sumas de comprobación.
-                .row   
-                    .col-sm-12.col-lg-6
-                        .img-container
-                            img.img-a(src="assets/images/pages/ilustraciones/img36.svg", alt='...').img-fluid.d-block.m-auto
-                    .col-sm-12.col-lg-6 
-                        div.my-5
-                            p.parrafo Los tipos de Ethernet son:
-                            ul.ul-bullet 
-                                li Ethernet
-                                li Fast Ethernet
-                                li Gigaabit Ethernet
+            
 
-
+                                             
+                
+    
+        

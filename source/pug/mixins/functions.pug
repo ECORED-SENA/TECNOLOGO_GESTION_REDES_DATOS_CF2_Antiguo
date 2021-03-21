@@ -7,25 +7,25 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
             .col-12.col-lg-6
 
                 h3#curso-titulo-componente.curso-subtitulo Tecnólogo en gestión de redes de datos
-                h1#curso-titulo-tema.curso-titulo Implementación de infraestructura tecnológica
+                h1#curso-titulo-tema.curso-titulo Configuración y gestión de dispositivos activos
 
                 .brand-line-primary
 
                 if pagina == 'main'
 
                     .keywords
-                        span.badge.badge-pill.badge-light.mr-2 #Redes 
-                        span.badge.badge-pill.badge-light.mr-2 #modelos 
-                        span.badge.badge-pill.badge-light.mr-2 #capas
-                        span.badge.badge-pill.badge-light.mr-2 #topologías 
-                        span.badge.badge-pill.badge-light.mr-2 #información 
-                        span.badge.badge-pill.badge-light.mr-2 #transmisión  
+                        span.badge.badge-pill.badge-light.mr-2 #Direccionamiento de red 
+                        span.badge.badge-pill.badge-light.mr-2 #enrutamiento
+                        span.badge.badge-pill.badge-light.mr-2 #IPv4
+                        span.badge.badge-pill.badge-light.mr-2 #IPv6 
 
                     .barra-dots.mt-5
                         img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
 
                 else 
-                    p.curso-descripcion A través de este componente formativo el aprendiz debe apropiar los elementos y conceptos de entrada requeridos para la elaboración de la infraestructura tecnológica como componente fundamental en el funcionamiento de cualquier organización.
+                    p.curso-descripcion El aprendiz debe apropiar los conocimientos para configurar y gestionar los dispositivos activos requeridos de acuerdo con la arquitectura planteada en la fase de planeación.
+
+
         
                 if pagina == 'home'
                     a.curso-btn-iniciar.btn.btn-light(href="main.html")
@@ -135,15 +135,12 @@ mixin creditosFooter(ruta)
                         span.text-small Regional Tolima    
 
                     p.footer-texto.mb-2
-                        | #[strong Agregar nombre]<br/>
+                        | #[strong Luz Mila Pacheco Fuentes]<br/>
                         span.text-small Diseñador Instruccional <br/>
 
                     p.footer-texto
                         span.text-small Regional Distrito Capital
 
-                    p.footer-texto.mb-2
-                        | #[strong Agregar nombre]<br/>
-                        span.text-small Diseñador Instruccional <br/>
 
                     p.footer-texto
                         span.text-small Regional Distrito Capital

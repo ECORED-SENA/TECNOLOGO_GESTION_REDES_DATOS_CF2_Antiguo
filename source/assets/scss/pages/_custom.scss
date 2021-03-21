@@ -250,7 +250,7 @@ ol.lista > li.mas:before {
 }
 
 .border-bottom-orange {
-    border-bottom: 5px solid $dark-orange;    
+    border-bottom: 20px solid $dark-orange;    
 }
 .h1c{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -260,7 +260,7 @@ ol.lista > li.mas:before {
 }
 .h1cc{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 38px;
+    font-size: 24px;
     font-weight:bold;
     color:#00223D ;
     line-height: 90%;
@@ -275,7 +275,7 @@ ol.lista > li.mas:before {
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
-    color: #00223D;
+    color:#50B3B8   ;
     font-weight: bold;
 }
 
@@ -299,10 +299,21 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     align-self: center;
 }
 .jt1{
+    margin:5px;
     border-radius: 8px;
-    border: solid #00223D 1px;
+    border: solid #50B3B8 2px;
     background-color: white;
-    margin: 0;
+    padding: 10px;
+    width: fit-content;
+        .h2c{
+            color: #00223D;
+            line-height:100%;
+            margin: 20px;
+            display: flex;
+            font-weight: 700;
+        }
+
+   
 
 }
 .pf1{
@@ -419,6 +430,15 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     margin: auto;
     text-align: center; 
 }
+.h1i{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #50B3B8;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    text-align: center; 
+}
 .hvb{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
@@ -480,9 +500,244 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     ;
 }
 .btn-light{
+    border: none;
     color: white;
     font-weight:normal;
     background-color:#21587B;
 }
+.btn-dark{
+    border: none;
+    color: white;
+    font-weight:normal;
+    background-color:#F9F9F9;
 
+}
+.bt-text{
+    color: #00223D;
+
+}
+.bt-icon{
+    color: #00223D
+    ;
+}
+.style-nav{
+    font-size: 12px;
+    padding:0;
+    margin: 0;
+    border: #50B3B8 solid;
+    
+    
+}
+.rp{
+    background-color:#00223D;
+    border-radius: 10px;
+    width: 60vw;
+    display: inline-block;
+    margin: auto;
+    align-items: initial;
+    position: relative;
+    height: fit-content;
+    padding: auto;
+    
+}
+.h1p{
+    font-family:'Roboto', sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+.parrafo-rp{
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    margin-left: 0;
+    padding:20px;
+    margin: auto;
+}
+
+// ESTILOS PARA LOS BADGES
+    .div-badge{
+        background-color: #F9F9F9;
+        display: inline-block;
+        border-radius: 0px 10px 10px 0px;
+        margin: 8px
+
+          
+    }
+    .badge-cyan{
+        background-color: #50B3B8;
+        width: fit-content;
+        border-radius: 10px;
+        display:inline-block;
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+    .badge-blue{
+        background-color: #21587B;
+        width: fit-content;
+        border-radius: 10px;
+        display:inline-block;
+        padding-left: 10px; 
+        padding-right: 10px;
+    } 
+    .badge-white{
+        display: inline-flex;
+        background-color: #F9F9F9;
+        align-items: center;
+        margin: auto;
+        padding-right: 10px;
+    }
+    .p-badge{
+        padding: 0;
+        margin: auto;
+        display:inline-block;
+        margin-left: 10px;
+        color: #00223D;
+        font-weight: 400;
+        font-family:'Roboto', sans-serif;
+    }
+    .h-badge{
+        display: inline-block;
+        margin:0;
+        font-size: 24px;
+        font-weight:800;
+        font-family:'Roboto', sans-serif;
+        padding: 0;
+        color: #F9F9F9;
+    }
+    .container-badger{
+        
+        width: 60px;
+        margin: auto;
+        align-items: center;
+        
+        
+    }
+    .img-badge{
+        margin: 5px;
+    }
+    .img-rp{
+        align-items: center;
+        width: 147px;
+        margin: 0;
+        padding: 0;
+        align-content: flex-start;
+        left: -10px;
+        bottom:-50px;
+    }
+    .jumbotron{
+        background-color: #F1F7FA;
+    }
+// TARJETAS INTRODUCCIÓN
+.div-gradient{
+    width: 233px;
+    height:274px        ;
+    background: rgb(255,255,255);
+    background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 100%);
+    border-radius: 20px 20px 2px 20px;
+    position:relative;
+    display: inline-block;
+    transition: 1s;
+    margin: 10px;
+}
+.div-gradient:hover{
+    transform: scale(1.13) ;
+    background: #50B3B8;
+    color: #50B3B8;
+    .h1i{
+        color: #F9F9F9;
+    }
+    .parrafos{
+        color: #F9F9F9;
+    }
+}
+.img-ci{
+    width: 79px;
+    height: 79px;
+}
+.c-card{
+    position: relative;
+    max-width: 191px;
+    align-items: center;
+    display: inline-block;
+    margin:20px;
+    
+}
+.i-general{
+    display: flex;
+    position: relative;
+    align-items: center;    
+    width: fit-content;
+    
+    justify-content: center;
+    margin: auto;
+    
+    
+}
+// VERTICAL PILLS
+.pills{
+    color: #E8E8E8;
+}
+.div-t1{
+    background-color: white ;
+    border: #50B3B8 solid 2px;
+    }
+
+.card-t1{
+border: none;
+}
+.btn-link ::before{
+    border-radius:20px !important;
+
+
+}
+.card-header{
+    border: 0px !important;
+}
+.card-body{
+    background-color: white !important;
+    
+}
+.btn-link::after{
+    background-color:white !important;
+    color:#00223D !important;
+    border-radius:50%!important;
+    border: #50B3B8 solid 2px;
+    
+    
+}
+.card-media{
+    background-color: white;
+    .h2c{
+        color: #50B3B8;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+}
+.div-list-arrow{
+    display: inline-block;
+    .img-container{
+        width: 26px;
+        height: 20px;
+        display: inline-block;
+    }
+    .parrafos{
+        display: inline-block;
+    }
+    .line{
+        border: #CCCCCC solid 1px;
+        margin:0;
+        width: 100%;
+    }
+}
+.img-fluid2{
+    max-width: 80%;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    padding: auto;
+    
+}
 
