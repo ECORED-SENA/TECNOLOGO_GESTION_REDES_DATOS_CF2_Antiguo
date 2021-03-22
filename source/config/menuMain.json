@@ -25,9 +25,9 @@
   { 
     "id": 1,
     "icon": "fa fa-play-circle",
-    "slug": "verificación-dispositivos",
+    "slug": "verificacion-dispositivos",
     "title": "Verificación dispositivos",
-    "breadcrumb": ["Inicio","Verificación-dispositivos"],
+    "breadcrumb": ["Inicio","verificacion-dispositivos"],
     "path": "pages/tema2.html",    
     "submenu": []   
   }
