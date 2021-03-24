@@ -9,11 +9,23 @@
             .col-xs-12.col-md-12.col-lg-4
                 .img-container.mt-5 
                     img.card-img-center(src="assets/images/pages/ilustraciones/img9.svg", alt='...').img-fluid.d-block.m-auto
-            .col-xs-12.col-md-12.col-lg-12
-                .img-container.mt-5 
-                    img.card-img-center(src="assets/images/pages/ilustraciones/img41.svg", alt='...').img-fluid.d-block.m-auto
-                .img-container.mt-5 
-                    img.card-img-center(src="assets/images/pages/ilustraciones/img10.svg", alt='...').img-fluid.d-block.m-auto
+        div.cuadrado.mt-5
+                    div.libro
+                        img(src="assets/images/pages/ilustraciones/img43.svg", alt='...').img-fluid
+                    div.text
+                        p.parrafos Uno de los principales parámetros que es necesario configurar en cualquier dispositivo conectado a una red es su dirección IP.
+        div.citas
+            div.citas-img.my-auto
+                .img-container.comillas  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/comillas.svg", alt='...').img-fluid2
+                div.parrafos-citas
+                    p.parrafos La 
+                     b dirección IP 
+                     b-none es el identificador del dispositivo dentro de una red y debe ser único dentro de los límites de dicha red. El uso, formato, tipos y demás características del 
+                     b direccionamiento IP 
+                     b-none están incluidos en lo que se conoce como 
+                     b protocolo IP.
+                   
         hr.line
         .h2c 1.1 Direcciones IP
         p.parrafos.mt-3 Las direcciones IP se dividen en dos grandes grupos, IPv4 e IPv6, las cuales entraremos a estudiar en detalle más adelante. Estas direcciones son la identificación que cada uno de los dispositivos conectados en red tienen asociados para poder enviar y recibir datos; están compuestas por una porción de red y una porción de host.
@@ -30,92 +42,248 @@
                 .col-sm-12.col-lg-6
                     .img-container 
                         img.card-img-center(src="assets/images/pages/ilustraciones/img11.svg", alt='...').img-fluid.d-block.m-auto
-        .img-container.mt-3
-            img.card-img-center(src="assets/images/pages/ilustraciones/img12.svg", alt='...').img-fluid2.d-block.m-auto
+        .tarjeta.tarjeta--banner.mt-5
+            .row.justify-content-center.align-items-center 
+                .col-auto 
+                    .tarjeta__icono
+                        img(src="assets/images/pages/ilustraciones/img18.svg", alt="")
+                .col-12.col-lg 
+                    .tarjeta__cuerpo
+                        p.mb-0 La misma dirección puede estar en otra ciudad y ahí es cuando entra en acción el concepto de la máscara de subred, quien vendría siendo la ciudad para este ejemplo, por ende, con esa dirección IP (dirección de la casa) y máscara de subred (ciudad) se puede ubicar con facilidad en un espacio alguna empresa de envíos para entregar algún pedido o en este caso entregar/recibir datos de información.
+
+
         hr.line.mt-6
-        .card.mt-4
-            .card-body
-                .row
-                    .col-3
-                        #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
-                            a#v-pills-one-tab.nav-link.active(data-toggle='pill', href='#v-pills-one', role='tab', aria-controls='v-pills-one', aria-selected='true') Red por defecto
-                            a#v-pills-two-tab.nav-link(data-toggle='pill', href='#v-pills-two', role='tab', aria-controls='v-pills-two', aria-selected='false') Clase A
-                            a#v-pills-three-tab.nav-link(data-toggle='pill', href='#v-pills-three', role='tab', aria-controls='v-pills-three', aria-selected='false') Clase B
-                            a#v-pills-four-tab.nav-link(data-toggle='pill', href='#v-pills-four', role='tab', aria-controls='v-pills-four', aria-selected='false') Clase C
-                            a#v-pills-five-tab.nav-link(data-toggle='pill', href='#v-pills-five', role='tab', aria-controls='v-pills-five', aria-selected='false') Clase D
-                            a#v-pills-six-tab.nav-link(data-toggle='pill', href='#v-pills-six', role='tab', aria-controls='v-pills-six', aria-selected='false') Clase E
-                            a#v-pills-seven-tab.nav-link(data-toggle='pill', href='#v-pills-seven', role='tab', aria-controls='v-pills-seven', aria-selected='false') Broadcast
-                    .col-9
-                        #v-pills-tabContent.tab-content
-                            #v-pills-one.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-one-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.my-auto 
-                                            .h2c Red por defecto
-                                            p.parrafos.mt-3 Está compuesta por la dirección 0.0.0.0 y se denomina ruta “quad-zero”.
-                                        .col-6
-                                             .img-container 
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img13.svg", alt='...').img-fluid.d-block.m-auto.img-fluid.d-none.d-lg-block.d-sm-none
-                            #v-pills-two.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-two-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.my-auto 
-                                            .h2c Clase A
-                                            p.parrafos.mt-3.d-block Este grupo de direcciones IP es el más grande del protocolo de internet en su versión 4, en donde el primer octeto empieza en 0 y termina en 127, el resto de los octetos están destinados para los hosts.
-                                            br
-                                            |La cantidad total de subredes son 224-2 = 16.777.214 y de hosts 231-2 = 2.147.483.648 de direcciones únicas.
-                                        .col-6
-                                             .img-container 
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img14.svg", alt='...').img-fluid.d-block.m-auto.d-none.d-lg-block.d-sm-none
-                            #v-pills-three.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-three-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.my-auto 
-                                            .h2c Clase B
-                                            p.parrafos.mt-3.d-block Los octetos que se ocupan para este grupo son los dos primeros, empezando el primer octeto en el rango de 128 al 191, y los dos octetos restantes están disponibles para los hosts. 
-                                            br 
-                                            |La cantidad de redes de la clase B está compuesta por 214 = 16.384 con 65.534 hosts por red para un total de 230-2 = 1.073.741.824 de direcciones únicas. 
-                                        .col-6
-                                             .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img15.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
-                            #v-pills-four.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-four-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.col-md-12.my-auto 
-                                            .h2c Clase C
-                                            p.parrafos.mt-3.d-block Estas direcciones IP son destinadas directamente para pymes o redes de hogar, estas direcciones ocupan los 3 primeros octetos teniendo como valor del primer octeto el rango de 192 al 223. 
-                                            br
-                                            |Existen 221= 2.097.152 redes compuestas por 28-2 = 256 hosts, para un total de 229=536.870.912 direcciones IP únicas.
-                                        .col-6
-                                             .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img16.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
-                            #v-pills-five.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-five-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.col-md-12.my-auto 
-                                            .h2c Clase D
-                                            p.parrafos.mt-3.d-block Es un grupo de direcciones especiales dirigida para multicast. Se compone de 228 = 268.435.456 direcciones IP únicas.
-                                        .col-6
-                                             .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img17.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
-                            #v-pills-six.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-six-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.col-md-12.my-auto 
-                                            .h2c Clase E
-                                            p.parrafos.mt-3.d-block Este grupo está reservado para propósitos experimentales.
-                                        .col-6
-                                             .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img18.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
-                            #v-pills-seven.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-seven-tab')
-                                .jumbotron.div-t1
-                                    .row
-                                        .col-6.col-md-12.my-auto 
-                                            .h2c Broadcast
-                                            p.parrafos.mt-3.d-block Cuando se envía un mensaje entre hosts en una red se envían como broadcast. Siempre utilizan la dirección IP 255.255.255.255.
-                                        .col-6
-                                             .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img19.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
+        .h2c 1.2 Clases de dirección IP
+        p.parrafos.mt-3 Existen varias clases de direcciones IPv4, adicional unas direcciones especiales:
+
+        nav.nav-tab-ecored.mt-3.d-sm-none.d-md-block.col-lg-12.d-none.d-xs-block.mt-
+                    #nav-tab.nav.nav-tabs.style-nav(role='tablist')
+                        a#nav-01-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-01', role='tab', aria-controls='nav-01', aria-selected='true').syle-nav 
+                            strong Red por defecto
+                        a#nav-02-tab.nav-item.nav-link(data-toggle='tab', href='#nav-02', role='tab', aria-controls='nav-02', aria-selected='false').syle-nav 
+                            strong Clase A
+                        a#nav-03-tab.nav-item.nav-link(data-toggle='tab', href='#nav-03', role='tab', aria-controls='nav-03', aria-selected='false').syle-nav 
+                            strong Clase B
+                        a#nav-04-tab.nav-item.nav-link(data-toggle='tab', href='#nav-04', role='tab', aria-controls='nav-04', aria-selected='false').syle-nav 
+                            strong Clase C
+                        a#nav-05-tab.nav-item.nav-link(data-toggle='tab', href='#nav-05', role='tab', aria-controls='nav-05', aria-selected='false').syle-nav 
+                            strong Clase D
+                        a#nav-06-tab.nav-item.nav-link(data-toggle='tab', href='#nav-06', role='tab', aria-controls='nav-06', aria-selected='false').syle-nav 
+                            strong Clase E
+                        a#nav-07-tab.nav-item.nav-link(data-toggle='tab', href='#nav-07', role='tab', aria-controls='nav-07', aria-selected='false').syle-nav 
+                            strong Broadcast
+                    #nav-tabContent.tab-content
+                        #nav-01.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-01-tab')
+                            .row 
+                                .col-lg-8.col-md-12.mt-5.col-sm-12 
+                                    .h1c Red por defecto
+                                    p.parrafo Está compuesta por la dirección 0.0.0.0 y se denomina ruta “quad-zero”.
+                                .col-lg-4.col-md-12.col-sm-12
+                                    img.img-a(src="assets/images/pages/ilustraciones/img13.svg", alt='...').img-fluid.d-block.m-auto
+                        #nav-02.tab-pane.fade(role='tabpanel', aria-labelledby='nav-02-tab')
+                            .row
+                                    .col-lg-9.col-md-7.mt-5.col-sm-6
+                                        .h1c Clase A
+                                        p.parrafo Este grupo de 
+                                            b direcciones IP 
+                                            b-none es el más grande del protocolo de internet en su 
+                                            b versión 4, 
+                                            b-none en donde el primer octeto empieza 
+                                            b en 0 
+                                            b-none y termina en 
+                                            b 127, 
+                                            b-none el resto de los octetos están destinados para los hosts. 
+                                        br
+                                        p.parrafo La cantidad total de subredes son 
+                                            b 224-2 = 16.777.214 
+                                            b-none y de hosts 
+                                            b 231-2 = 2.147.483.648 
+                                            b-none de direcciones únicas.
+                                    .col-lg-3.col-md-5.col-sm-6
+                                        img.img-a(src="assets/images/pages/ilustraciones/img14.svg", alt='...').img-fluid
+                            
+                        #nav-03.tab-pane.fade(role='tabpanel', aria-labelledby='nav-03-tab')
+                            .row 
+                                .col-lg-8.col-md-12.mt-5.col-sm-12
+                                    .h1c Clase B
+                                    p.parrafo Los octetos que se ocupan para este grupo son los dos primeros, empezando el primer octeto en el rango de 
+                                        b 128 
+                                        b-none al 
+                                        b 191, 
+                                        b-none y los dos octetos restantes están disponibles para los hosts. 
+                                    br
+                                    p.parrafo La cantidad de redes de la clase B está compuesta por 
+                                        b 2<sup>14</sup>= 16.384
+                                        b-none con 
+                                        b 65.534 
+                                        b-none hosts por red para un total de 
+                                        b 2<sup>30</sup>-2 = 1.073.741.824 
+                                        b-none de direcciones únicas. 
+                                .col-lg-4.col-md-12.col-sm-12
+                                    img.img-a(src="assets/images/pages/ilustraciones/img15.svg").img-fluid.d-block.m-auto
+
+                        #nav-04.tab-pane.fade(role='tabpanel', aria-labelledby='nav-04-tab')
+                            .row                                    
+                                    .col-lg-9.col-md-7.mt-5.col-sm-6
+                                        .h1c Clase C
+                                        p.parrafo Estas 
+                                            b direcciones IP 
+                                            b-none son destinadas directamente para pymes o redes de hogar, estas direcciones ocupan los 3 primeros octetos teniendo como valor del primer octeto el rango de 
+                                            b 192 
+                                            b-none al 
+                                            b 223. 
+                                        br
+                                        p.parrafos Existen 
+                                            b 2<sup>21</sup>= 2.097.152 
+                                            b-none redes compuestas por 
+                                            b 2<sup>8</sup>-2 = 256 
+                                            b-none hosts, para un total de 
+                                            b 2<sup>29</sup>=536.870.912 
+                                            b-none direcciones IP únicas.
+                                    .col-lg-3.col-md-5.col-sm-6
+                                        img.img-a(src="assets/images/pages/ilustraciones/img16.svg", alt='...').img-fluid
+                        #nav-05.tab-pane.fade(role='tabpanel', aria-labelledby='nav-05-tab')
+                            .row 
+                                .col-lg-9.col-md-7.mt-5.col-sm-6 
+                                    .h1c Clase D
+                                    p.parrafo Es un grupo de direcciones especiales dirigida para 
+                                        b multicast. 
+                                        b-none Se compone de 
+                                        b 2<sup>28</sup> = 268.435.456 
+                                        b-none direcciones IP únicas.
+                                .col-lg-3.col-md-5.col-sm-6
+                                    img.img-a(src="assets/images/pages/ilustraciones/img17.svg").img-fluid
+                        #nav-06.tab-pane.fade(role='tabpanel', aria-labelledby='nav-06-tab')
+                            .row
+                                    .col-lg-8.col-md-6.mt-5.col-sm-12 
+                                        .h1c Clase E
+                                        p.parrafo Este grupo está reservado para propósitos experimentales.
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        img.img-a(src="assets/images/pages/ilustraciones/img18.svg", alt='...').img-fluid
+                        #nav-07.tab-pane.fade(role='tabpanel', aria-labelledby='nav-07-tab')
+
+                            .row 
+                                .col-lg-9.col-md-7.mt-5.col-sm-6 
+                                    .h1c Broadcast
+                                    p.parrafo Cuando se envía un mensaje entre 
+                                        b hosts 
+                                        b-none en una red se envían como 
+                                        b broadcast. 
+                                        b-none Siempre utilizan la dirección 
+                                        b IP 255.255.255.255.
+                                .col-lg-3.col-md-5.col-sm-6
+                                    img.img-a(src="assets/images/pages/ilustraciones/img19.svg").img-fluid
+        .row 
+                .d-none.d-sm-block.d-md-none.col-sm-12.d-block.d-sm-none
+                     #accordionExample.accordion
+                        .card
+                            #headingOne2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne2', aria-expanded='false', aria-controls='collapseOne2')
+                                        h2.mb-0.collapsable-title Red por defecto
+                            #collapseOne2.collapse.show(aria-labelledby='headingOne2', data-parent='#accordionExample')
+                                .card-body
+                                    p.parrafo Está compuesta por la dirección 0.0.0.0 y se denomina ruta “quad-zero”.
+                        .card
+                            #headingTwo2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo2', aria-expanded='false', aria-controls='collapseTwo2')
+                                        h2.mb-0.collapsable-title Clase A
+                            #collapseTwo2.collapse(aria-labelledby='headingTwo2', data-parent='#accordionExample')
+                                .card-body
+                                    p.parrafo Este grupo de 
+                                            b direcciones IP 
+                                            b-none es el más grande del protocolo de internet en su 
+                                            b versión 4, 
+                                            b-none en donde el primer octeto empieza 
+                                            b en 0 
+                                            b-none y termina en 
+                                            b 127, 
+                                            b-none el resto de los octetos están destinados para los hosts. 
+                                    br
+                                    p.parrafo La cantidad total de subredes son 
+                                            b 224-2 = 16.777.214 
+                                            b-none y de hosts 
+                                            b 231-2 = 2.147.483.648 
+                                            b-none de direcciones únicas.
+                                    
+                        .card
+                            #headingThree2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree2', aria-expanded='false', aria-controls='collapseThree2')
+                                        h2.mb-0.collapsable-title Clase B
+                            #collapseThree2.collapse(aria-labelledby='headingThree2', data-parent='#accordionExample')
+                                .card-body
+                                    p.parrafo Los octetos que se ocupan para este grupo son los dos primeros, empezando el primer octeto en el rango de 
+                                        b 128 
+                                        b-none al 
+                                        b 191, 
+                                        b-none y los dos octetos restantes están disponibles para los hosts. 
+                                    br
+                                    p.parrafo La cantidad de redes de la clase B está compuesta por 
+                                        b 2<sup>14</sup>= 16.384
+                                        b-none con 
+                                        b 65.534 
+                                        b-none hosts por red para un total de 
+                                        b 2<sup>30</sup>-2 = 1.073.741.824 
+                                        b-none de direcciones únicas.
+                                    
+                        .card
+                            #headingFour2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFour2', aria-expanded='false', aria-controls='collapseFour2')
+                                        h2.mb-0.collapsable-title Clase C
+                            #collapseFour2.collapse(aria-labelledby='headingFour2', data-parent='#accordionExample')
+                                .card-body
+                                    p.parrafo Estas 
+                                            b direcciones IP 
+                                            b-none son destinadas directamente para pymes o redes de hogar, estas direcciones ocupan los 3 primeros octetos teniendo como valor del primer octeto el rango de 
+                                            b 192 
+                                            b-none al 
+                                            b 223. 
+                                    br
+                                    p.parrafos Existen 
+                                            b 2<sup>21</sup>= 2.097.152 
+                                            b-none redes compuestas por 
+                                            b 2<sup>8</sup>-2 = 256 
+                                            b-none hosts, para un total de 
+                                            b 2<sup>29</sup>=536.870.912 
+                                            b-none direcciones IP únicas.
+
+                        .card
+                            #headingFive2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFive2', aria-expanded='false', aria-controls='collapseFive2')
+                                        h2.mb-0.collapsable-title Clase D
+                            #collapseFive2.collapse(aria-labelledby='headingFive2', data-parent='#accordionExample')
+                                .card-body
+                                    p.parrafo Es un grupo de direcciones especiales dirigida para 
+                                        b multicast. 
+                                        b-none Se compone de 
+                                        b 2<sup>28</sup> = 268.435.456 
+                                        b-none direcciones IP únicas.
+
+                        .card
+                            #headingSix2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSix2', aria-expanded='false', aria-controls='collapseSix2')
+                                        h2.mb-0.collapsable-title Clase E
+                            #collapseSix2.collapse(aria-labelledby='headingSix2', data-parent='#accordionExample')
+                                .card-body
+                                     p.parrafo Este grupo está reservado para propósitos experimentales.
+                        .card
+                            #headingSeven2.card-header
+                                h2.mb-0
+                                    button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSeven2', aria-expanded='false', aria-controls='collapseSeven2')
+                                        h2.mb-0.collapsable-title Broadcast
+                            #collapseSeven2.collapse(aria-labelledby='headingSeven2', data-parent='#accordionExample')
+                                .card-body
+                                    p.parrafo Cuando se envía un mensaje entre 
+                                        b hosts 
+                                        b-none en una red se envían como 
+                                        b broadcast. 
+                                        b-none Siempre utilizan la dirección 
+                                        b IP 255.255.255.255.
         hr.line.mt-6
         #accordionExample.accordion
             .card
@@ -233,11 +401,11 @@
                         img.card-img-top(src="assets/images/pages/ilustraciones/img26.svg", alt='...').img-fluid2
         hr.line
         .row.mt-5   
-            .col-6
+            .col-lg-6.col-md-12
                 .h2c 1.4 Planificaciones de direcciones IP 
                 p.parrafos.mt-3 Con TCP/IP se puede hacer Subnetting, o sea, dividir las redes de clases A, B y C en redes más pequeñas.
                 img.card-img-top(src="assets/images/pages/ilustraciones/img28.svg", alt='...').img-fluid
-            .col-6
+            .col-lg-6.col-md-12
                 .img-container  
                         img.card-img-top(src="assets/images/pages/ilustraciones/img27.svg", alt='...').img-fluid
                 div.div-list-arrow.d-block.mt-3
@@ -283,19 +451,18 @@
                             b-none define el rango de las máquinas en cada subred.
         hr.line
         .row.mt-5
-            .col-6
+            .col-lg-6.col-md-12
                 .h2c.mt-5 1.5 ¿Cómo se direcciona desde máquina?
                 p.parrafos.mt-3 Cuando un host desea enviar una serie de datos a otro, estos son convertidos a un formato de red apropiado (capa de Aplicación) y divididos en una serie de unidades, denominadas segmentos (capa de Transporte), que son enumerados para su correcto reensamble en la máquina destino.
-            .col-5
+            .col-lg-6.col-md-12
                 .img-container  
                             img.card-img-top(src="assets/images/pages/ilustraciones/img29.svg", alt='...').img-fluid
-            .col-1
         p.parrafos.mt-3 Posteriormente, son pasados a la capa de Internet, que les coloca las direcciones IP de la máquina origen y de la máquina destino. Las unidades así obtenidas se conocen con el nombre de paquetes. Entonces son pasados a la capa de Enlace de Datos, que les añade las direcciones MAC de ambas máquinas y un número calculado para la verificación posterior de errores en el envío, pasando entonces a denominarse tramas. 
         .row    
-            .col-5
+            .col-lg-6.col-md-12
               .img-container  
                             img.card-img-top(src="assets/images/pages/ilustraciones/img30.svg", alt='...').img-fluid  
-            .col-7 
+            .col-lg-6.col-md-12 
                 p.parrafos.mt-5 Por último, las tramas son pasadas a la capa Física que las une en trenes de bits apropiados para su transformación en impulsos eléctricos o en ondas, que posteriormente son enviados al medio.
                 br
                 |Cuando los impulsos llegan a la máquina destino el proceso se invierte, obteniendo la aplicación receptora los datos en su formato original. 
@@ -307,7 +474,7 @@
                     h2.mb-0
                         button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseA', aria-expanded='true', aria-controls='collapseA')
                             .h2c 1.5.1 Comunicación entre computadores en red
-                #collapseA.collapse.show(aria-labelledby='headingA', data-parent='#accordionExample2')
+                #collapseA.collapse(aria-labelledby='headingA', data-parent='#accordionExample2')
                     .card-body
                         p.parrafos Imaginemos una red formada por varios hosts, como la representada en la siguiente imagen:
                         .img-container.mt-6  
@@ -331,14 +498,20 @@
                             b-none Las peticiones 
                             b ARP 
                             b-none son de tipo broadcast, es decir, peticiones que son enviadas a todos y cada uno de los equipos en la red.
-                        .img-container.mt-5
-                            img.card-img-top(src="assets/images/pages/ilustraciones/img32.svg", alt='...').img-fluid2 
+                        .tarjeta.tarjeta--banner
+                            .row.justify-content-center.align-items-center 
+                                .col-auto 
+                                    .tarjeta__icono
+                                        img(src="assets/images/pages/ilustraciones/img18.svg", alt="")
+                                .col-12.col-lg 
+                                    .tarjeta__cuerpo
+                                        p.mb-0 La pregunta llega a todas las máquinas, pero sólo C contesta, enviando una respuesta con su dirección MAC. Entonces, A añade ambas direcciones MAC a los paquetes y los pasa a la capa Física, que lo transmite al medio.
             .card
                 #headingB.card-header
                     h2.mb-0
                         button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseB', aria-expanded='true', aria-controls='collapseB')
                             .h2c 1.5.2 Comunicación entre ordenadores en dos redes. Routers.
-                #collapseB.collapse.show(aria-labelledby='headingB', data-parent='#accordionExample')
+                #collapseB.collapse(aria-labelledby='headingB', data-parent='#accordionExample')
                     .card-body
                         .row 
                             .col-9
@@ -358,8 +531,15 @@
                         .img-container.mt-5  
                                     img.card-img-top(src="assets/images/pages/ilustraciones/img34.svg", alt='...').img-fluid2  
                         p.parrafos.mt-5 Ahora, cuando un host envía una petición ARP para averiguar la dirección MAC correspondiente a una IP dada y no es respondido por ningún equipo de su red, envía los paquetes correspondientes a un router que tiene configurado para este tipo de envíos, denominado gateway por defecto. Para la Federación de enseñanza de Andalucía (2010), una vez que el router recibe los paquetes de datos utiliza un parámetro especial, denominado máscara de red, que combinado con la dirección IP destino le da la red a la que pertenece el host buscado. Pasa entonces los paquetes a la red a la que pertenece C, haciendo una nueva petición de broadcast preguntando la MAC de C. Este le responde, y entonces el router le envía los paquetes directamente. Si C desea responder a A, el proceso se invierte.
-                         .img-container.mt-5  
-                                    img.card-img-top(src="assets/images/pages/ilustraciones/img35.svg", alt='...').img-fluid2 
+                        .tarjeta.tarjeta--banner
+                            .row.justify-content-center.align-items-center 
+                                .col-auto 
+                                    .tarjeta__icono
+                                        img(src="assets/images/pages/ilustraciones/img18.svg", alt="")
+                                .col-12.col-lg 
+                                    .tarjeta__cuerpo
+                                        p.mb-0 Este proceso es necesario realizarlo sólo una vez, ya que en esta tanto los hosts A y C como el router anotan las parejas de direcciones MAC-IP en unas tablas especiales, denominadas tablas de enrutamiento, que usarán en envíos de datos posteriores para enrutar los paquetes directamente. Resumiendo, los routers son los principales responsables de la correcta comunicación entre máquinas de diferentes redes, encargándose en este proceso de enrutar correctamente los paquetes de datos.
+
         .h2c.mt-3 1.6 Subredes, VLSM y Sumarización
         div.player.mt-5
             .embed-responsive.embed-responsive-16by9
@@ -370,16 +550,24 @@
         p.parrafos Un bit está compuesto por los valores 0 y 1. El 0 para indicar que no hay comunicación y el 1 que sí la hay o, dicho de otra manera: 0 para falso y 1 para verdadero. 
         br
         |Los computadores trabajan con grupos de 8 bits, los cuales se llaman bytes. El intervalo de valores de un byte está en el rango de 0 a 255. De esta manera, cuando se menciona que una dirección IPv4 está compuesta de 4 octetos, quiere decir que se compone de 4 bytes.
-        .row 
-            .col-lg-4.col-md-6
-                .img-container.mt-5  
-                                    img.card-img-top(src="assets/images/pages/ilustraciones/img36.svg", alt='...').img-fluid2 
-            .col-lg-4.col-md-6
-                .img-container.mt-5  
-                                    img.card-img-top(src="assets/images/pages/ilustraciones/img37.svg", alt='...').img-fluid2  
-            .col-lg-4.col-md-12
-                .img-container.mt-5  
-                                    img.card-img-top(src="assets/images/pages/ilustraciones/img38.svg", alt='...').img-fluid2 
+        div.i-general-bin.mt-5
+            div.div-gradient
+                div.c-card
+                    img.card-img-top(src="assets/images/pages/ilustraciones/b1.svg", alt='...').d-block.m-auto.mt-0.img-ci
+                    .h1i.text-center.mt-3 ESTO ES UN BIT
+                    
+            
+            div.div-gradient
+                div.c-card
+                    img.card-img-top(src="assets/images/pages/ilustraciones/b2.svg", alt='...').d-block.m-auto.mt-0.img-ci
+                    .h1i.text-center.mt-3 ESTO ES UN BIT
+                    
+                
+            div.div-gradient
+                div.c-card
+                    img.card-img-top(src="assets/images/pages/ilustraciones/b3.svg", alt='...').d-block.m-auto.mt-0.img-ci-2
+                    .h1i.text-center.mt-3 ESTO ES UN BYTE
+                    
         #accordionExample3.accordion.mt-5
             .card
                 #headingD.card-header
@@ -395,14 +583,20 @@
         .h2c 1.8 IPv6
         p.parrafos Debido al crecimiento exponencial que tuvo la implementación del protocolo de internet en su versión 4 y, partiendo que el diseño de esta fue casi un experimento, sin llegar a imaginar el éxito comercial que iba a tener y que solo dispone de 232 direcciones no se planteó que en pocos meses iba a quedar corta en espacio. 
         .row 
-            .col-6
+            .col-lg-6.col-md-12
                 p.parrafo Por tal motivo se contempló la implementación de una nueva versión llamada IPv6, está dispone de 2128 direcciones o, dicho de otra manera, 340 sextillones. Esta versión fue trabajada por la organización de estandarización de los protocolos de internet (IETF, Internet Engineering Task Force) en los últimos años. El despliegue de IPv6 se irá realizando gradualmente, en una coexistencia ordenada con IPv4, al que se irá desplazando a medida que dispositivos electrónicos con conexión a Internet, equipos de red, aplicaciones, contenidos y servicios se vayan adaptando a la nueva versión del protocolo de Internet.
 
-            .col-6  
+            .col-lg-6.col-md-12  
                 .img-container  
                                     img.card-img-top(src="assets/images/pages/ilustraciones/img39.svg", alt='...').img-fluid2
-        .img-container.mt-5  
-                                    img.card-img-top(src="assets/images/pages/ilustraciones/img40.svg", alt='...').img-fluid2               
+        .tarjeta.tarjeta--banner
+                            .row.justify-content-center.align-items-center 
+                                .col-auto 
+                                    .tarjeta__icono
+                                        img(src="assets/images/pages/ilustraciones/img18.svg", alt="")
+                                .col-12.col-lg 
+                                    .tarjeta__cuerpo
+                                        p.mb-0 Por ello, es importante que se entienda cómo se realiza el despliegue del nuevo protocolo de Internet, tanto si son usuarios residenciales, corporativos, proveedores de contenidos, proveedores de servicios de Internet, así como la propia administración pública.
 
 
 

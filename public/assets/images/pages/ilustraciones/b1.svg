@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <filter id="Rectángulo_2215" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_41982" data-name="Grupo 41982" transform="translate(-373 -3825)">
+    <g id="Grupo_41981" data-name="Grupo 41981" transform="translate(378.211 3828.211)">
+      <rect id="Rectángulo_2211" data-name="Rectángulo 2211" width="33" height="33" rx="5" transform="translate(-0.211 -0.211)" fill="#37a3a5"/>
+      <g transform="matrix(1, 0, 0, 1, -5.21, -3.21)" filter="url(#Rectángulo_2215)">
+        <rect id="Rectángulo_2215-2" data-name="Rectángulo 2215" width="26" height="26" rx="5" transform="translate(9 6)" fill="#fff" opacity="0.21"/>
+      </g>
+    </g>
+    <text id="_0" data-name="0" transform="translate(390 3849)" fill="#fff" font-size="16" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">0</tspan></text>
+  </g>
+</svg>

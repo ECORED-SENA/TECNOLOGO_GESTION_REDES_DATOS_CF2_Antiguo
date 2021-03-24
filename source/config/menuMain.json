@@ -17,16 +17,22 @@
     "id": 1,
     "icon": "fa fa-play-circle",
     "slug": "direccionamiento-ip",
-    "title": "Direccionamiento IP",
+    "title": "1. Direccionamiento IP",
     "breadcrumb": ["Inicio","direccionamiento-ip"],
     "path": "pages/tema1.html",    
-    "submenu": []   
+    "submenu": [
+      {
+        "slug": "direccion-ip",
+        "title": "1.1 Direcciones ip",
+        "anchor": "direccion-ip"
+      }
+    ]   
   },
   { 
     "id": 1,
     "icon": "fa fa-play-circle",
     "slug": "verificacion-dispositivos",
-    "title": "verificacion dispositivos",
+    "title": "2. Verificacion dispositivos",
     "breadcrumb": ["Inicio","erificacion-dispositivos"],
     "path": "pages/tema2.html",    
     "submenu": []   
