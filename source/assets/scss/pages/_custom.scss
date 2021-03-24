@@ -640,7 +640,7 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     position:relative;
     display: flex;
     transition: 1s;
-    margin: 1rem 1rem;
+    margin:1rem 1rem;
     flex-grow: 1;
 
 }
@@ -736,15 +736,14 @@ border: none;
     }
 }
 .img-fluid2{
-    max-width: 80%
+    max-width: 80%;
     display: flex;
     margin: 0 auto;
     align-content: center;
     padding: auto;
     
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 // ESTILOS PARA DIV CUADRADO AZUL
 .cuadrado{
     background-color: #00223D;
@@ -837,8 +836,8 @@ b{
         display: inline-block;
         margin: auto;
         align-items: center;
-        float: right    ;
     }
     .img-container{
         margin: 1px;
     }
+}

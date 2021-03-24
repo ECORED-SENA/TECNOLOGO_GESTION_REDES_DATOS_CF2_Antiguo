@@ -1,64 +1,310 @@
 .container
     .jumbotron.bg-white.mt-2
-        .h1c 2. Tecnología y conceptos básicos de networking
+        .h1c 2. Verificación de dispositivos
         hr.line
-        .container
-            .h2c 2.1 Conceptos básicos y componentes de una red
-            .h2c.mt-3 2.1.1 Ancho de banda
-            p.parrafo.mt-3 Cuando los datos se envían por una red de computadoras, se dividen en bloques pequeños denominados “paquetes”. Cada paquete contiene información de la dirección de origen y destino. El paquete, junto con la información de dirección física, se denomina “trama”. También contiene información que describe cómo volver a unir los paquetes en el destino. El ancho de banda determina la cantidad de paquetes que pueden transmitirse en un lapso fijo.
+        .row 
+            .col-sm-12.col-lg-6
+                p.parrafos.mt-5 Para la verificación de dispositivos, se debe establecer una distribución específica de las diferentes conexiones mediante dominios o grupos de trabajo, configuraciones de las direcciones IP, recursos compartidos, gestión de cuentas de usuario y privilegios asociados, generalmente bajo un sistema de archivo distribuido o directorio activo.
+                br
+                p.parrafos La implementación de diagramas de flujo para representar gráficamente los procedimientos sistemáticos, los métodos corporativos y las distintas técnicas a aplicar, son una manera de documentar idónea para estos procesos.
 
-            .row   
-                .col-xs-12.col-sm-12.col-md-5.col-lg-7
-                    img.card-img-top.img29(src="assets/images/pages/ilustraciones/img29.svg", alt='...').img-fluid
-                .col-xs-12.col-sm-12.col-md-7.col-lg-5   
-                    p.parrafo.mt-3 El ancho de banda se mide en bits por segundo y, por lo general, se indica con alguna de las siguientes unidades de medida:
-                    .col-xs-12.col-sm-12.col-md-12
-                        div.container-badges.d-block.m-auto
-                            
-                            div.div-badge.shadow-sm
-                                div.badge-blue.py-auto
-                                    .h-badge.mx-auto a.
-                                div.badge-white
-                                    p.p-badge Bits por segundo
-                            div.div-badge.shadow-sm
-                                div.badge-blue.py-auto
-                                    .h-badge.mx-auto b.
-                                div.badge-white
-                                    p.p-badge Kilobits por segundo
-                            div.div-badge.shadow-sm
-                                div.badge-blue.py-auto
-                                    .h-badge.mx-auto c.
-                                div.badge-white
-                                    p.p-badge Megabits por segundo
-                            div.div-badge.shadow-sm
-                                div.badge-blue.py-auto
-                                    .h-badge.mx-auto d.
-                                div.badge-white
-                                    p.p-badge Gigabits por segundo 
-            .jumbotron.bg1.mt-5
-                .row 
-                    .col-xs-12.col-md-6.col-sm-12.col-lg-10.my-5   
-                        p.parrafo 
-                            b Nota:
-                            b-none 1 byte equivale a 8 bits y se abrevia con una letra B mayúscula, y 1 MB/s equivale a, aproximadamente, 8 Mb/s. Los datos que se transmiten por la red se pueden transmitir mediante uno de tres modos: simplex, half-duplex o full-duplex.
-                    .col-xs-12.col-md-6.col-sm-12.col-lg-2.my-2.d-none.d-sm-block
-                        .img-container
-                            img.card-img-top(src="assets/images/pages/ilustraciones/img3.svg", alt='...').img-fluid
-            
-            .h2c 2.1.2 Direccionamiento de equipos de red
+            .col-sm-12.col-lg-6
+                .img-container.mt-5  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img42.svg", alt='...').img-fluid
+        hr.line
+        .h2c 2.1 Configuración IPv4/IPv6
+        p.parrafos.mt-3 Para que un dispositivo final se comunique a través de la red, 
+            b se debe configurar con la información de dirección IP correcta.
+            b-none El dispositivo final 
+            b se debe configurar con una dirección IP y una máscara de subred. 
+        .row.mt-5 
+            .col-sm-12.col-lg-6
+                .img-container  
+                    img.card-img-top(src="assets/images/pages/ilustraciones/img44.svg", alt='...').img-fluid
+            .col-sm-12.col-lg-6
+                p.parrafos.mt-sm-5.mt-lg-0 La 
+                    b dirección de gateway 
+                    b-none predeterminado es la 
+                    b dirección IP 
+                    b-none de la interfaz del router que se utiliza para que el tráfico de la red salga de la red local. 
+                    b El gateway predeterminado
+                    b-none es una 
+                    b dirección IP
+                    b-none que, por lo general, asigna el administrador de red y se utiliza cuando se debe enrutar tráfico a otra red. La dirección del servidor 
+                    b DNS 
+                    b-none es la
+                    b dirección IP
+                    b-none del servidor del Sistema de nombres de dominios 
+                    b (DNS, Domain Name System)
+                    b-none , que se utiliza para traducir 
+                    b direcciones IP 
+                    b-none a 
+                    b direcciones Web
+                    b-none , como 
+                    b www.sena.edu.co. 
+                    br
+                    |A todos los dispositivos de Internet se les asigna una dirección IP, mediante la cual se accede a ellos. Sin embargo, resulta más fácil recordar nombres que números. Por lo tanto, los sitios Web tienen nombres para simplificar el proceso.
+        .row.mt-5             
+            .col-sm-12.col-lg-7
+                p.parrafos.mt-sm-5.mt-lg-3 
+                    b El servidor DNS 
+                    b-none se utiliza para mantener la asignación entre las direcciones IP y los nombres de los diversos dispositivos.
+                    br
+                    |La información de la 
+                    b dirección IP 
+                    b-none se puede introducir en el PC de forma manual o mediante el
+                    b Protocolo de configuración dinámica de host (DHCP). 
+                    b-none El 
+                    b protocolo DHCP 
+                    b-none permite configurar la información de 
+                    b IP 
+                    b-none de los dispositivos finales de manera automática. 
+                    b DHCP es una tecnología 
+                    b-none que se utiliza en casi todas las redes comerciales. Para comprender mejor por qué 
+                    b DHCP 
+                    b-none es tan popular, tenga en cuenta todo el trabajo adicional que habría que realizar sin este protocolo. 
+            .col-sm-12.col-lg-5
+                .img-container  
+                    img.card-img-top(src="assets/images/pages/ilustraciones/img45.svg", alt='...').img-fluid
+        p.parrafos.mt-5 
+            b DHCP permite la configuración automática de direcciones IPv4 para cada dispositivo final de una red con DHCP habilitado.
+            b-none Imagine la cantidad de tiempo que le llevaría si cada vez que se conectara a la red tuviera que introducir manualmente 
+            b la dirección IP, la máscara de subred, el gateway predeterminado y el servidor DNS. 
+            b-none Multiplique eso por cada usuario y cada uno de los dispositivos en la red, y se dará cuenta del problema. 
+            b DHCP es un ejemplo de la tecnología en su máxima expresión. 
+            b-none Uno de los propósitos principales de cualquier tecnología es facilitar las tareas que se desean o se deben realizar. 
+            b Con DHCP, el usuario final ingresa al área que abarca una red determinada, conecta un cable Ethernet o habilita una conexión inalámbrica e, inmediatamente, se le asigna la información de IPv4 necesaria para comunicarse de manera correcta a través de la red.
+        .img-container.mt-5  
+                    img.card-img-top(src="assets/images/pages/ilustraciones/img46.svg", alt='...').img-fluid
+        hr.line
+        .h2c 2.2 Plano de control IPv4/IPv6
+        p.parrafos.mt-3 Se asume implícitamente que el plano de control de enrutamiento reside y se ejecuta completamente en un procesador de enrutamiento dentro del router. Por lo tanto, el plano de control de enrutamiento de toda la red está descentralizado, con diferentes partes (por ejemplo, de un algoritmo de enrutamiento) que se ejecutan en diferentes routers e interactúan enviándole mensajes de control entre sí. 
+        br
+        p.parrafos De hecho, los routers de Internet actuales y los algoritmos de enrutamiento operan exactamente de esta manera. Además, los proveedores de switches y routers agrupan su plano de datos de hardware y el plano de control de software en plataformas cerradas (pero interoperables) en un producto integrado verticalmente.
+        div.cuadrado.mt-5
+                    div.libro
+                        img(src="assets/images/pages/ilustraciones/img43.svg", alt='...').img-fluid
+                    div.text
+                        p.parrafos Según los autores Kurose y Ross (2013).
+        .img-container.mt-6  
+                    img.card-img-top(src="assets/images/pages/ilustraciones/img47.svg", alt='...').img-fluid
+        div.cuadrado.mt-5
+                    div.libro
+                        img(src="assets/images/pages/ilustraciones/img43.svg", alt='...').img-fluid
+                    div.text
+                        p.parrafos Una API bien definida dicta cómo estas dos partes interactúan y se comunican entre sí. Estos investigadores argumentan que:
+        .img-container.mt-5  
+                    img.card-img-top(src="assets/images/pages/ilustraciones/img49.svg", alt='...').img-fluid
+        .row.mt-5 
+            .col-md-12-col-lg-7 
+                .img-container  
+                    img.card-img-top(src="assets/images/pages/ilustraciones/img28.svg", alt='...').img-fluid2
+            .col-md-12-col-lg-5.my-auto 
+                div.div-list-arrow.d-block.m-auto
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Algoritmos de ruteo tradicional:
+                            b-none implementado en los routers.
+                        hr.line.mt-5
+                div.div-list-arrow.mt-5
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos 
+                            b Software Defined Networking (SDN): 
+                            b-none implementado en los servidores remotos.
+            hr.line
+            .h2c 2.3 Plano de datos IPv4/IPv6
+            p.parrafos.mt-3 Una de las funciones de la capa de red es el reenvío de paquetes, donde mueve los paquetes desde una entrada del router hasta la salida apropiada. Actúa de manera local, es una función de cada router.
+            div.cuadrado2
+                .row
+                    div.circulos
+                        .img-container.my-auto  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/circulos.svg", alt='...').img-fluid2
+
+                    .col-sm-12.col-lg-5
+                        div.title
+                            .h1c ESTRUCTURA DE UN
+                            div.title-w
+                                .h2c DATAGRAMA
+                        p.parrafos.mt-3 Una de las funciones de la capa de red es el reenvío de paquetes, donde mueve los paquetes desde una entrada del router hasta la salida apropiada. Actúa de manera local, es una función de cada router.
+                    .col-lg-2.d-md-none.d-lg-block.d-none.d-sm-block 
+                        .img-container.my-auto  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img50.svg", alt='...').img-fluid
+                    .col-sm-12.col-lg-5
+                        .img-container.my-auto  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img51.svg", alt='...').img-fluid
+            hr.line
             .row 
-                .col-xs-12.col-md-8.col-sm-12.col-lg-7.d-none.d-sm-block
-                    .img-container
-                        img.card-img-top(src="assets/images/pages/ilustraciones/img31.svg", alt='...').img-fluid
-                .col-xs-12.col-md-4.col-sm-12.col-lg-5.my-auto
-                    ul.ul-bullet.my-auto 
-                        li Direccionamiento IP
-                        li Ipv4
-                        li Ipv6
-                        li Direccionamiento estático
-                        li Direccionamiento DHCP
-                        li ICMP
+                .col-sm-12.col-md-6.col-lg-7.mt-5    
+                    .h2c 2.4 Protocolo de enrutamiento RIPng
+                    p.parrafos.mt-3 El protocolo RIPng actualmente no es muy utilizado, al igual que su equivalente para IPv4, pero resulta útil como base para comprender el routing de red básico. Se llevará a cabo un laboratorio con una topología básica para dar a conocer el uso de dicho protocolo para los protocolos IPv4 e IPv6.
+                .col-sm-12.col-md-6.col-lg-5
+                    .jumbotron
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img52.svg", alt='...').img-fluid2
+            hr.line 
+            .row.mt-5.mt-sm-2
+                .col-sm-12.col-md-6.col-lg-5.order-sm-2.order-lg-1.mt-sm-5.mt-lg-0
+                    .img-container  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img53.svg", alt='...').img-fluid
+                .col-sm-12.col-md-6.col-lg-7.mt-5.order-sm-1.mt-sm-1.order-lg-2
+                    .h2c 2.5 IPv6 en Linux
+                    p.parrafos.mt-3 Para poner en práctica los conceptos y fundamentos, se va a 
+                        b realizar la configuración de IPv6 en el sistema Linux
+                        b-none , de acuerdo con el video relacionado:
+                    div.cuadrado3.d-block.m-auto    
+                        .img-container.d-inline-block  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img54.svg", alt='...').img-fluid.d-block.m-auto
+                        p.parrafos.d-inline-block 
+                            b Enlace a. 
+                            b-none Conceptos y fundamentos, se va a realizar la configuración de IPv6 en el sistema Linux.
+            hr.line
+            .row.mt-5.mt-sm-2
+                .col-sm-12.col-md-6.col-lg-7.mt-5.order-sm-1.mt-sm-1.order-lg-1
+                    .h2c.text-lg-right.text-sm-left 2.6 IPv6 en Windows
+                    p.parrafos.mt-3.text-lg-right.text-sm-left Para poner en práctica los conceptos y fundamentos, se va a 
+                        b realizar la configuración de IPv6 en el sistema Windows, 
+                        b-none de acuerdo con el video relacionado:
+                    div.cuadrado3.d-block.m-auto    
+                        .img-container.d-inline-block  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img54.svg", alt='...').img-fluid.d-block.m-auto
+                        p.parrafos.d-inline-block 
+                            b Enlace a. 
+                            b-none Conceptos y fundamentos, se va a realizar la configuración de IPv6 en el sistema Windows.
+                .col-sm-12.col-md-6.col-lg-5.order-sm-2.order-lg-2.mt-sm-5.mt-lg-0
+                    .img-container  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img55.svg", alt='...').img-fluid
+            hr.line
+            .h2c 2.7 Verificación problemas protocolo RIP y OSPF para IPv6
+            .row.mt-lg-5.mt-sm-2
+                .col-sm-12.col-lg-6
+                    .jumbotron
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img56.svg", alt='...').img-fluid2
+
+                .col-sm-12.col-lg-6 
+                    p.parrafos El uso de comandos necesarios para la resolución de problemas en 
+                        b los protocolos RIP y OSPF, 
+                        b-none toman importancia tanto para 
+                        b IPv4 
+                        b-none como para 
+                        b IPv6, 
+                        b-none ya que las posibles causas son las mismas en ambos, el proceso de depuración de errores se logra con la implementación de los comandos adecuados, como lo son: 
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Show IP Route
+                        hr.line
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Show IP Protocols.
+                        hr.line
+                        div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Debug IP RIP
+            hr.line
+            .h2c 2.8 Protocolo OSPF 
+            p.parrafos.mt-3  El protocolo OSPF (Open Shortest Path First) es un protocolo de enrutamiento de estado de enlace desarrollado como reemplazo del protocolo de enrutamiento vector distancia RIP.
+            .row 
+                .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                    p.parrafos.mt-3 Durante los comienzos de la tecnología de redes y de Internet, RIP era un protocolo de enrutamiento aceptable. Sin embargo, el hecho de que RIP dependiera del conteo de saltos como única métrica para determinar la mejor ruta rápidamente se volvió problemático. El uso del conteo de saltos no escala bien en redes más grandes con varias rutas de distintas velocidades. 
+                .col-xs-12.col-sm-12.col-md-6.col-lg-6 
+                    .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img57.svg", alt='...').img-fluid
+            .row 
+                .col-xs-12.col-sm-12.col-md-6.col-lg-6
+    
+                    div.cuadrado3.d-block.m-auto.mt-sm-3.mt-lg-0    
+                        .img-container.d-inline-block  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img54.svg", alt='...').img-fluid.d-block.m-auto
+                        p.parrafos.d-inline-block 
+                            b Enlace a. 
+                            b-none ¿Qué es y cómo funciona? el protocolo de enrutamiento OSPF.  
+                .col-xs-12.col-sm-12.col-md-6.col-lg-6 
+                    p.parrafos.mt-3 OSPF presenta ventajas importantes en comparación con RIP, ya que ofrece una convergencia más rápida y escala a implementaciones de red mucho más grandes. OSPF es un protocolo de enrutamiento sin clase que utiliza el concepto de áreas para realizar la escalabilidad.
+            hr.line 
+            .h2c 2.9 Servicios para IPv6
+            p.parrafos-mt-3 Los servicios de red con soporte IPv6 son de alta importancia para este mundo de transición, debido al cambio que se avecina en todo el mundo y especialmente en nuestro país, liderado por el MinTic. Algunos de los servicios que vamos a tratar son:
+            .row
+                .col-xs-12.col-sm-12.col-md-6.col-lg-7
+                    .jumbotron
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img58.svg", alt='...').img-fluid
+                .col-xs-12.col-sm-12.col-md-6.col-lg-5
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Servicio Web con HTTP y HTTPS
+                        hr.line
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 DNS
+                        hr.line 
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 SSH
+                        hr.line
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 DHCP
+                        hr.line  
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Telefonía IP
+                        hr.line  
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Servicio de Base de Datos
+                        hr.line  
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Enrutamiento BGP
+                        hr.line  
+                    div.div-list-arrow.d-block.m-auto.mt-3
+                        .img-container  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img25.svg", alt='...').img-fluid
+                        p.parrafos.mt-3 Enrutamiento OSPF
+            .img-container.d-block.m-auto  
+                            img.card-img-top(src="assets/images/pages/ilustraciones/img59.svg", alt='...').img-fluid 
+            hr.line
+            .row 
+                .col-xs-12.col-sm-12.col-md-6.col-lg-8
+                    .h2c 2.10 Software de simulación de redes Packet Tracer
+                    p.parrafos.mt-3 La herramienta Packet Tracer de Cisco, es un software de simulación de redes que permite hacer pruebas con diferentes dispositivos de red, pudiendo llevar un caso real al mundo de la simulación, donde se obtienen resultados favorables en cada una de las fases de una topología de red, comenzando por la planeación hasta la verificación de sus transmisiones.
+                .col-xs-12.col-sm-12.col-md-6.col-lg-4 
+                    .img-container  
+                        img.card-img-top(src="assets/images/pages/ilustraciones/img60.svg", alt='...').img-fluid2
+            p.parrafos.mt-3 Esta herramienta se utilizará en la mayor parte de los laboratorios propuestos de esta Tecnología de Gestión de Redes de Datos, permitiendo que el aprendiz involucra el saber con el hacer. 
 
 
 
 
+            
+
+
+
+                    
+
+
+
+                       
+
+
+        
+
+            
+
+
+
+
+
+        
