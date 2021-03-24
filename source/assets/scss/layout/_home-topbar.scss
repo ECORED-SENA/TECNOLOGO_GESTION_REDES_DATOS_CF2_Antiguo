@@ -4,6 +4,8 @@
     align-items: center;
     margin-bottom: 2rem;
     flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
 
     &__logo {
         
@@ -17,6 +19,7 @@
         display: block;
         flex: 0 1 auto;
         margin-left: auto;
+        background-color: white;
     }
 
     &__list {
@@ -27,6 +30,7 @@
         justify-content: space-between;
         align-items: center;
         width: 450px;
+        
     }   
 
     &__link {

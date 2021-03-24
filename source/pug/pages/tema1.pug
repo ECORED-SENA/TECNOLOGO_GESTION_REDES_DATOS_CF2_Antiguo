@@ -59,7 +59,7 @@
                                             p.parrafos.mt-3 Está compuesta por la dirección 0.0.0.0 y se denomina ruta “quad-zero”.
                                         .col-6
                                              .img-container 
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img13.svg", alt='...').img-fluid.d-block.m-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img13.svg", alt='...').img-fluid.d-block.m-auto.img-fluid.d-none.d-lg-block.d-sm-none
                             #v-pills-two.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-two-tab')
                                 .jumbotron.div-t1
                                     .row
@@ -70,7 +70,7 @@
                                             |La cantidad total de subredes son 224-2 = 16.777.214 y de hosts 231-2 = 2.147.483.648 de direcciones únicas.
                                         .col-6
                                              .img-container 
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img14.svg", alt='...').img-fluid.d-block.m-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img14.svg", alt='...').img-fluid.d-block.m-auto.d-none.d-lg-block.d-sm-none
                             #v-pills-three.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-three-tab')
                                 .jumbotron.div-t1
                                     .row
@@ -81,45 +81,45 @@
                                             |La cantidad de redes de la clase B está compuesta por 214 = 16.384 con 65.534 hosts por red para un total de 230-2 = 1.073.741.824 de direcciones únicas. 
                                         .col-6
                                              .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img15.svg", alt='...').img-fluid.d-block.my-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img15.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
                             #v-pills-four.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-four-tab')
                                 .jumbotron.div-t1
                                     .row
-                                        .col-6.my-auto 
+                                        .col-6.col-md-12.my-auto 
                                             .h2c Clase C
                                             p.parrafos.mt-3.d-block Estas direcciones IP son destinadas directamente para pymes o redes de hogar, estas direcciones ocupan los 3 primeros octetos teniendo como valor del primer octeto el rango de 192 al 223. 
                                             br
                                             |Existen 221= 2.097.152 redes compuestas por 28-2 = 256 hosts, para un total de 229=536.870.912 direcciones IP únicas.
                                         .col-6
                                              .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img16.svg", alt='...').img-fluid.d-block.my-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img16.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
                             #v-pills-five.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-five-tab')
                                 .jumbotron.div-t1
                                     .row
-                                        .col-6.my-auto 
+                                        .col-6.col-md-12.my-auto 
                                             .h2c Clase D
                                             p.parrafos.mt-3.d-block Es un grupo de direcciones especiales dirigida para multicast. Se compone de 228 = 268.435.456 direcciones IP únicas.
                                         .col-6
                                              .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img17.svg", alt='...').img-fluid.d-block.my-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img17.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
                             #v-pills-six.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-six-tab')
                                 .jumbotron.div-t1
                                     .row
-                                        .col-6.my-auto 
+                                        .col-6.col-md-12.my-auto 
                                             .h2c Clase E
                                             p.parrafos.mt-3.d-block Este grupo está reservado para propósitos experimentales.
                                         .col-6
                                              .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img18.svg", alt='...').img-fluid.d-block.my-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img18.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
                             #v-pills-seven.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-seven-tab')
                                 .jumbotron.div-t1
                                     .row
-                                        .col-6.my-auto 
+                                        .col-6.col-md-12.my-auto 
                                             .h2c Broadcast
                                             p.parrafos.mt-3.d-block Cuando se envía un mensaje entre hosts en una red se envían como broadcast. Siempre utilizan la dirección IP 255.255.255.255.
                                         .col-6
                                              .img-container.float-center
-                                                img.card-img-center(src="assets/images/pages/ilustraciones/img19.svg", alt='...').img-fluid.d-block.my-auto
+                                                img.card-img-center(src="assets/images/pages/ilustraciones/img19.svg", alt='...').img-fluid.d-block.my-auto.d-none.d-lg-block.d-sm-none
         hr.line.mt-6
         #accordionExample.accordion
             .card
@@ -127,7 +127,7 @@
                     h2.mb-0
                         button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
                             .h2c 1.2.1 Accesibilidad
-                #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+                #collapseOne.collapse.hide(aria-labelledby='headingOne', data-parent='#accordionExample')
                     .card-body
                         p.parrafos De acuerdo con la Federación de enseñanza de Andalucía (2010), la accesibilidad se da desde IP públicas y privadas:
                         .row.justify-content-center.mt-5
@@ -135,7 +135,7 @@
                                 .card-media.shadow
                                     .card-media__body                
                                         figure.card__figure
-                                            img(src="assets/images/pages/ilustraciones/img20.svg").img-fluid
+                                            img(src="assets/images/pages/ilustraciones/img20.svg")
                                         p.card__copy
                                             span 
                                                 .h2c Direcciones IP Públicas
@@ -161,7 +161,7 @@
                     h2.mb-0
                         button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapsetwo', aria-expanded='true', aria-controls='collapsetwo')
                             .h2c 1.2.2 Perdurabilidad
-                #collapsetwo.collapse.show(aria-labelledby='headingtwo', data-parent='#accordionExample')
+                #collapsetwo.collapse.hide(aria-labelledby='headingtwo', data-parent='#accordionExample')
                     .card-body
                         p.parrafos De acuerdo con la Federación de enseñanza de Andalucía (2010), la accesibilidad se da desde IP públicas y privadas:
                         .row.justify-content-center.mt-5

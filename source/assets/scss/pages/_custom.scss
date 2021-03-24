@@ -504,7 +504,7 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     border: none;
     color: white;
     font-weight:normal;
-    background-color:#21587B;
+    background-color:#00223D;
 }
 .btn-dark{
     border: none;
@@ -632,15 +632,18 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     }
 // TARJETAS INTRODUCCIÓN
 .div-gradient{
-    width: 233px;
-    height:274px        ;
+    width: 230px;
+    height:270px;
+    min-width: 100px;
     background: rgb(255,255,255);
     background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 100%);
     border-radius: 20px 20px 2px 20px;
     position:relative;
-    display: inline-block;
+    display: flex;
     transition: 1s;
-    margin: 10px;
+    margin: 1rem 1rem;
+    flex-grow: 1;
+
 }
 .div-gradient:hover{
     transform: scale(1.13) ;
@@ -658,21 +661,21 @@ background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 
     height: 79px;
 }
 .c-card{
-    position: relative;
+    display: block;
+    margin: auto;
     max-width: 191px;
+    max-height: 270px;
     align-items: center;
-    display: inline-block;
-    margin:20px;
+    padding: 1rem;
+    
+    
     
 }
 .i-general{
-    display: flex;
-    position: relative;
-    align-items: center;    
-    width: fit-content;
-    
-    justify-content: center;
-    margin: auto;
+    display:flex;
+    margin: 5rem  auto;
+    width: 100%;
+    flex-wrap: wrap;
     
     
 }
@@ -814,6 +817,8 @@ b{
 }
 .jumbotron{
     padding: 2rem 2rem 2rem 2rem;
+    background-color: #f1f7fa !important;
+
 }
 .cuadrado3{
     background-color: #00223D;
@@ -831,7 +836,7 @@ b{
         display: inline-block;
         margin: auto;
         align-items: center;
-        float: right;
+        float: right    ;
     }
     .img-container{
         margin: 1px;

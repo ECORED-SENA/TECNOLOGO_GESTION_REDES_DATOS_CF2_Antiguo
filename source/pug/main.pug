@@ -6,22 +6,18 @@ html(lang="es")
         include includes/head.pug
 
 
-    body#page-main.theme-dark.page-header-textura
+    body#page-main.theme-dark
 
         .page-main
-
-            header.sticky-top
-                include includes/page-main_topbar.pug
-
+            include includes/page-main_topbar.pug
 
             main.mb-5
-                #page-main-header.page-header
-                    .page-textura
-                        .container
-                            +pageHeader("Tema", "assets/images/header/header_media.svg", "main")
-
+                div.header-main   
+                    .container
+                        .h1c.my-auto Configuración y gestión de dispositivos activos
+                       
                 #mainContent
-                   
+                                           
 
 
             footer.mt-5

@@ -1,13 +1,26 @@
 .page-header {
-    background: rgb(255,255,255);
+    background: white;
     background: linear-gradient(83deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 100%);
     position:relative;
+    width: 1273px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    height: 542px;
     .barra-dots {
         width: 240px;
-        max-width: 70%;
+        max-width: 100%;
     }
-
 }
+.header-main{
+    background: url(../images/header/header_pattern2.svg) scroll bottom center no-repeat !important;
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    display: block;
+    margin: auto;
+}
+
 
 #page-home .page-header {
     &::before {
@@ -25,12 +38,17 @@
 }
 
 .page-header-textura{
+    
     .page-textura {
-        padding: 2rem 1rem;
+        padding: 0;
         background: url(../images/header/header_pattern.svg) scroll bottom center repeat !important;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        height: 542px;
+        
     }
 }
-
 .curso-subtitulo {
     font-size: 1rem;
     font-weight: 800px;
